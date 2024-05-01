@@ -3,9 +3,9 @@ require([
     "esri/identity/IdentityManager"
 ], function (OAuthInfo, esriId) {
 
-    // window.onload = () => {
-    //     LoadSurvey123();
-    // }
+    window.onload = () => {
+        LoadSurvey123();
+    }
     
     document.getElementById("sign-in").addEventListener('click', userAuth);
 
