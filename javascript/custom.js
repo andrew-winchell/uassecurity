@@ -27,13 +27,13 @@ require([
                 LoadSurvey123(token);
             });
 
-        // esriId.checkSignInStatus(info.portalUrl + "/sharing")
-        //     .then(() => {
-        //         console.log("Sign in Successfull.");
-        //     })
-        //     .catch(() => {
-        //         console.log("Public User");
-        //     });
+        esriId.checkSignInStatus(info.portalUrl + "/sharing")
+            .then(() => {
+                console.log("Sign in Successfull.");
+            })
+            .catch(() => {
+                console.log("Public User");
+            });
     }
 
     function LoadSurvey123(token) {
