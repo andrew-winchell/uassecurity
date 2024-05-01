@@ -48,18 +48,12 @@ require([
 
     function signIn() {
         esriId
-            .checkSignInStatus(info.portalUrl + "/sharing")
+            .getCredential(info.portalUrl + "/sharing", {
+                oAuthPopupConfirmation: true
+            })
             .then(() => {
                 LoadSurvey123();
-            })
-            .catch(() => {
-                esriId
-                    .getCredential(info.portalUrl + "/sharing", {
-                        oAuthPopupConfirmation: true
-                    })
-                    .then(() => {
-                        checkSignIn();
-                    });
+                console.log("signed in")
             });
     }
 
