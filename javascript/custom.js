@@ -48,7 +48,6 @@ require([
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
-            clientId: "0iQHRlu9bRvesIIV",
             container: 'mywebform',
             itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
             portalUrl: 'https://faasysops.maps.arcgis.com',
@@ -66,7 +65,6 @@ require([
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
-            clientId: "0iQHRlu9bRvesIIV",
             container: 'mywebform',
             itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
             portalUrl: 'https://faasysops.maps.arcgis.com',
