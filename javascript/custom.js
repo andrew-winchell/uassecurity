@@ -11,10 +11,10 @@ require([
 
     function userAuth() {
         const info = new OAuthInfo({
-            appId: "U8amYNIuc1osljKk",
-            portalUrl: "https://cobecconsulting.maps.arcgis.com",
-            // appId: "0iQHRlu9bRvesIIV", 
-            // portalUrl: "https://faasysops.maps.arcgis.com",
+            // appId: "U8amYNIuc1osljKk",
+            // portalUrl: "https://cobecconsulting.maps.arcgis.com",
+            appId: "0iQHRlu9bRvesIIV", 
+            portalUrl: "https://faasysops.maps.arcgis.com",
             authNamespace: "portal_oauth_inline",
             flowtype: "auto",
             popup: false
@@ -54,7 +54,7 @@ require([
 
     function LoadSurvey123Secure(token) {
         document.getElementById('mywebform').innerHTML = '';
-        
+
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
