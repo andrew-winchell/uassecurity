@@ -8,8 +8,8 @@ require([
     }
 
     const info = new OAuthInfo({
-        appId: "0iQHRlu9bRvesIIV",
-        portalUrl: "https://faasysops.maps.arcgis.com",
+        appId: "NlofBsaSFmnfbANf",
+        portalUrl: "https://cobecconsulting.maps.arcgis.com",
         authNamespace: "portal_oauth_inline",
         flowtype: "auto",
         popup: false
@@ -24,7 +24,7 @@ require([
     // function userAuth() {
     //     const info = new OAuthInfo({
     //         appId: "0iQHRlu9bRvesIIV",
-    //         portalUrl: "https://faasysops.maps.arcgis.com",
+    //         portalUrl: "https://.maps.arcgis.com",
     //         authNamespace: "portal_oauth_inline",
     //         flowtype: "auto",
     //         popup: false
