@@ -53,6 +53,8 @@ require([
     }
 
     function LoadSurvey123Secure(token) {
+        document.getElementById('mywebform').innerHTML = '';
+        
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
