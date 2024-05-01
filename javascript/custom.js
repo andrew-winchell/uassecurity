@@ -6,34 +6,46 @@ require([
     window.onload = () => {
         LoadSurvey123();
     }
-    
-    document.getElementById("sign-in").addEventListener('click', userAuth);
 
-    function userAuth() {
-        const info = new OAuthInfo({
-            appId: "0iQHRlu9bRvesIIV",
-            portalUrl: "https://faasysops.maps.arcgis.com",
-            authNamespace: "portal_oauth_inline",
-            flowtype: "auto",
-            popup: false
-        });
+    const info = new OAuthInfo({
+        appId: "0iQHRlu9bRvesIIV",
+        portalUrl: "https://faasysops.maps.arcgis.com",
+        authNamespace: "portal_oauth_inline",
+        flowtype: "auto",
+        popup: false
+    });
 
-        esriId.registerOAuthInfos([info]);
+    esriId.registerOAuthInfos([info]);
 
-        esriId.getCredential(info.portalUrl + "/sharing")
-            .then((credentials) => {
-                let token = credentials.token;
-                LoadSurvey123(token);
-            });
+    let credential = esriId.getCredential(info.portalUrl + "/sharing");
 
-        // esriId.checkSignInStatus(info.portalUrl + "/sharing")
-        //     .then(() => {
-        //         console.log("Sign in Successfull.");
-        //     })
-        //     .catch(() => {
-        //         console.log("Public User");
-        //     });
-    }
+    // document.getElementById("sign-in").addEventListener('click', userAuth);
+
+    // function userAuth() {
+    //     const info = new OAuthInfo({
+    //         appId: "0iQHRlu9bRvesIIV",
+    //         portalUrl: "https://faasysops.maps.arcgis.com",
+    //         authNamespace: "portal_oauth_inline",
+    //         flowtype: "auto",
+    //         popup: false
+    //     });
+
+    //     esriId.registerOAuthInfos([info]);
+
+    //     esriId.getCredential(info.portalUrl + "/sharing")
+    //         .then((credentials) => {
+    //             let token = credentials.token;
+    //             LoadSurvey123(token);
+    //         });
+
+    //     // esriId.checkSignInStatus(info.portalUrl + "/sharing")
+    //     //     .then(() => {
+    //     //         console.log("Sign in Successfull.");
+    //     //     })
+    //     //     .catch(() => {
+    //     //         console.log("Public User");
+    //     //     });
+    // }
 
     function LoadSurvey123() {
         let url_string = window.location.href;
