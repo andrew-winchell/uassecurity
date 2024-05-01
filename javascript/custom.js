@@ -17,7 +17,7 @@ require([
             portalUrl: "https://www.arcgis.com",
             authNamespace: "portal_oauth_inline",
             flowtype: "auto",
-            popup: true
+            popup: false
         });
 
         esriId.registerOAuthInfos([info]);
