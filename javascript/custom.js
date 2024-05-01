@@ -3,8 +3,6 @@ require([
     "esri/identity/IdentityManager"
 ], function (OAuthInfo, esriId) {
 
-    let token = null;
-
     const info = new OAuthInfo({
         appId: "U8amYNIuc1osljKk",
         portalUrl: "https://cobecconsulting.maps.arcgis.com",
@@ -23,7 +21,7 @@ require([
                 console.log("Sign in Successfull.");
             
                 console.log("window onload secure");
-                LoadSurvey123Secure(token);
+                userAuth();
             })
             .catch(() => {
                 console.log("Public User");
@@ -40,6 +38,10 @@ require([
             .then((credentials) => {
                 token = credentials.token;
                 console.log(token);
+                LoadSurvey123Secure(token);
+            })
+            .catch(error => {
+                console.error("Authentication failed: ", error);
             });
     }
 
