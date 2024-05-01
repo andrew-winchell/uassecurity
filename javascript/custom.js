@@ -15,7 +15,7 @@ require([
             portalUrl: "https://faasysops.maps.arcgis.com",
             authNamespace: "portal_oauth_inline",
             flowtype: "auto",
-            popup: false
+            popup: true
         });
 
         esriId.registerOAuthInfos([info]);
