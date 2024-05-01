@@ -1,0 +1,15 @@
+.devkit-version-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  height: 30px;
+  margin: 12px 12px 0 0;
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--slate);
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-version-wrapper {
+    margin: 6px 24px 0 0;
+  }
+}

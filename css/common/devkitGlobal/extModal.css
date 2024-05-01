@@ -1,0 +1,69 @@
+.devkit-modal {
+  width: auto;
+  font-size: 1rem;
+}
+
+.devkit-modal .devkit-modal-heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background: var(--dialog-background);
+  color: var(--white);
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+.devkit-modal .devkit-modal-body {
+  border: solid 1px var(--light-grey);
+  border-top: none;
+  padding: 15px;
+  color: var(--slate);
+  line-height: 1.5rem;
+}
+
+.devkit-modal .devkit-modal-body h3,
+.devkit-modal .devkit-modal-body .devkit-h3 {
+  color: var(--navy-blue);
+}
+
+.devkit-modal .devkit-modal-body p {
+  margin-top: 0;
+}
+
+.devkit-modal .devkit-modal-body .devkit-red-text {
+  color: var(--red);
+}
+
+.devkit-modal .devkit-modal-body .devkit-italic-text {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--red);
+}
+
+.devkit-modal .devkit-modal-body .devkit-buttons-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-modal {
+    width: auto;
+  }
+  .devkit-modal .devkit-modal-body {
+    height: auto;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-modal {
+    width: 600px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-modal {
+    width: 900px;
+  }
+}

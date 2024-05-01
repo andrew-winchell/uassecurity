@@ -1,0 +1,53 @@
+.devkit-footer-groups .devkit-footer-group-title,
+.devkit-info-group-links .devkit-footer-group-title {
+  margin-left: 6px;
+  margin-top: 12px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.devkit-footer-groups ul.devkit-footer-links,
+.devkit-info-group-links ul.devkit-footer-links {
+  display: block;
+  padding-left: 6px;
+  margin: 0;
+}
+
+.devkit-footer-groups ul.devkit-footer-links li,
+.devkit-info-group-links ul.devkit-footer-links li {
+  display: inline;
+  font-weight: 300;
+  list-style-type: none;
+  line-height: 0.375rem;
+  font-size: 0.875rem;
+  margin-right: 9px;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-footer-groups .devkit-footer-group-title,
+  .devkit-info-group-links .devkit-footer-group-title {
+    margin-left: 0;
+    margin-bottom: 12px;
+    padding-top: 24px;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .devkit-footer-groups ul.devkit-footer-links,
+  .devkit-info-group-links ul.devkit-footer-links {
+    display: block;
+    padding-left: 0;
+  }
+
+  .devkit-footer-groups ul.devkit-footer-links li:last-of-type,
+  .devkit-info-group-links ul.devkit-footer-links li:last-of-type {
+    margin-bottom: 8px;
+  }
+
+  .devkit-footer-groups ul.devkit-footer-links li,
+  .devkit-info-group-links ul.devkit-footer-links li {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 1rem;
+  }
+}

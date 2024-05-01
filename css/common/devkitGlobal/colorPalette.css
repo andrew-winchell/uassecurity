@@ -1,0 +1,350 @@
+.devkit-color-palette-wrapper {
+  & h2:first-of-type & .devkit-h2:first-of-type {
+    margin-top: 24px;
+  }
+}
+
+.devkit-color-palette-wrapper .devkit-warning-message-wrapper {
+  margin: 18px auto;
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-color-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 12px 12px 12px;
+}
+
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-light-blue,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-primary-blue,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-lighter-grey,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-slate,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-green,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-yellow,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-red,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-sky-blue,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-apple-green,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-varden,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-tutu,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-light-cyan {
+  width: 150px;
+  height: 150px;
+}
+
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-name,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-hex-text,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-rgb-text {
+  font-weight: 600;
+}
+
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-hex {
+  margin-top: 12px;
+}
+
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-name {
+  font-size: 1.125rem;
+}
+
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-hex,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-rgb {
+  padding-left: 18px;
+}
+
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-hex,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-color-rgb,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-hex-text,
+.devkit-color-palette-wrapper
+  .devkit-cp-wrapper
+  .devkit-color-wrapper
+  .devkit-rgb-text {
+  font-size: 0.875rem;
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-light-blue {
+  background: var(--light-blue);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-primary-blue {
+  background: var(--primary-blue);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-lighter-grey {
+  background: var(--lighter-grey);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-slate {
+  background: var(--slate);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-green {
+  background: var(--green);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-yellow {
+  background: var(--yellow);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-red {
+  background: var(--red);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-sky-blue {
+  background: var(--sky-blue);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-apple-green {
+  background: var(--applegreen);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-varden {
+  background: var(--varden);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-tutu {
+  background: var(--tutu);
+}
+
+.devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-light-cyan {
+  background: var(--light-cyan);
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-color-palette-wrapper .devkit-cp-wrapper {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 500px;
+  }
+
+  .devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-color-wrapper {
+    display: flex;
+    margin: 0 18px 18px 0;
+  }
+
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-light-blue,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-primary-blue,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-lighter-grey,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-slate,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-green,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-yellow,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-red,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-sky-blue,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-apple-green,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-varden,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-tutu,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-light-cyan {
+    width: 120px;
+    height: 120px;
+    margin-right: 12px;
+  }
+
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-color-name {
+    width: auto;
+    text-align: center;
+  }
+
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-color-hex,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-color-rgb {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-color-palette-wrapper .devkit-warning-message-wrapper {
+    margin: 24px auto;
+  }
+  .devkit-color-palette-wrapper .devkit-cp-wrapper {
+    max-width: 700px;
+  }
+  .devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-color-wrapper {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-color-palette-wrapper .devkit-cp-wrapper {
+    max-width: 1200px;
+  }
+
+  .devkit-color-palette-wrapper .devkit-cp-wrapper .devkit-color-wrapper {
+    margin-bottom: 36px;
+  }
+
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-light-blue,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-primary-blue,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-lighter-grey,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-slate,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-green,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-yellow,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-red,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-sky-blue,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-apple-green,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-varden,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-tutu,
+  .devkit-color-palette-wrapper
+    .devkit-cp-wrapper
+    .devkit-color-wrapper
+    .devkit-light-cyan {
+    width: 150px;
+    height: 150px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-color-palette-wrapper .devkit-cp-wrapper {
+    max-width: 1400px;
+  }
+}

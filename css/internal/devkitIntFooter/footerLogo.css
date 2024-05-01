@@ -1,0 +1,24 @@
+.devkit-footer-logo-wrapper {
+  padding-left: 6px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.devkit-footer-logo-wrapper a:link,
+.devkit-footer-logo-wrapper a:visited,
+.devkit-footer-logo-wrapper a:hover {
+  color: var(--light-blue);
+  text-decoration: none;
+}
+
+.devkit-footer-logo-wrapper .devkit-footer-special {
+  color: var(--dark-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-footer-logo-wrapper {
+    padding-left: 24px;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}

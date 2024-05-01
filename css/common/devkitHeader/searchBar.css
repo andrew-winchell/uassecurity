@@ -1,0 +1,111 @@
+.devkit-search-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 48px;
+}
+
+.devkit-search-wrapper button {
+  padding: 0;
+  margin-left: -5px;
+}
+
+.devkit-search-wrapper input[type="text"] {
+  width: 270px;
+  height: 22px;
+  border-left: 2px solid var(--background-grey);
+  border-bottom: 2px solid var(--background-grey);
+  border-top: 2px solid var(--background-grey);
+  border-right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.devkit-search-wrapper input::-moz-placeholder {
+  padding-left: 6px;
+}
+
+.devkit-search-wrapper input:-ms-input-placeholder {
+  padding-left: 6px;
+}
+
+.devkit-search-wrapper input::placeholder {
+  padding-left: 6px;
+}
+
+.devkit-search-wrapper .devkit-btn-search,
+.devkit-search-wrapper .devkit-close-search {
+  display: none;
+}
+
+.devkit-search-wrapper .devkit-search-icon {
+  width: 32px;
+  height: 28px;
+  padding-right: 2px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 0px solid var(--lighter-grey);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: var(--background-grey);
+  color: var(--whaleblue);
+  vertical-align: bottom;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-search-wrapper {
+    display: block;
+    padding-bottom: 60px;
+  }
+  .devkit-search-wrapper input[type="text"] {
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-search-wrapper {
+    display: none;
+    position: absolute;
+    top: 102px;
+    right: 24px;
+    z-index: 10;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .devkit-search-wrapper input[type="text"] {
+    width: 380px;
+  }
+
+  .devkit-search-wrapper .devkit-search-icon {
+    display: none;
+  }
+
+  .devkit-search-wrapper .devkit-btn-search,
+  .devkit-search-wrapper .devkit-close-search {
+    display: inline;
+    font-size: 0.875rem;
+    font-weight: 600;
+    background: var(--background-grey);
+    border: 0px solid var(--lighter-grey);
+    color: var(--whaleblue);
+    vertical-align: bottom;
+  }
+
+  .devkit-search-wrapper .devkit-btn-search {
+    width: 70px;
+    height: 28px;
+    border: 0px solid var(--lighter-grey);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .devkit-search-wrapper .devkit-close-search {
+    width: 30px;
+    height: 28px;
+    border-radius: 5px;
+    margin-left: 1px;
+  }
+
+  .devkit-search-wrapper .devkit-close-search .fa-times {
+    padding-top: 2px;
+  }
+}

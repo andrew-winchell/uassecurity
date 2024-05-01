@@ -1,0 +1,41 @@
+.devkit-pod-box-wrapper {
+  font-size: 1rem;
+  margin: 0 24px 12px 12px;
+}
+
+.devkit-pod-box-wrapper .devkit-pod-heading {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background: var(--dialog-background);
+  color: var(--white);
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+.devkit-pod-box-wrapper .devkit-pod-body {
+  width: 278px;
+  border: solid 1px var(--light-grey);
+  border-top: none;
+  padding: 15px;
+  color: var(--slate);
+  line-height: 1.5rem;
+}
+
+.devkit-pod-box-wrapper .devkit-pod-body p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-pod-box-wrapper {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-pod-box-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

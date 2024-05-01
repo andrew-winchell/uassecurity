@@ -1,0 +1,102 @@
+:root {
+  margin: 0 auto;
+}
+
+.devkit-ext-fw-main-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr repeat(3, 16px 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  width: auto;
+  margin: 12px;
+  border-top: solid 2px var(--lighter-grey);
+}
+
+.devkit-ext-fw-main-wrapper h1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.devkit-ext-fw-main-wrapper .devkit-home-content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.devkit-ext-fw-main-wrapper .devkit-home-content p {
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-ext-fw-main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .devkit-ext-fw-main-wrapper h1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 23;
+    grid-column: 1 / span 23;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 18px;
+  }
+
+  .devkit-ext-fw-main-wrapper .devkit-home-content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 23;
+    grid-column: 1 / span 23;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-ext-fw-main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    width: 960px;
+    margin: 0 auto;
+    border-top: 0;
+  }
+
+  .devkit-ext-fw-main-wrapper h1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 23;
+    grid-column: 1 / span 23;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 18px;
+  }
+
+  .devkit-ext-fw-main-wrapper .devkit-home-content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 23;
+    grid-column: 1 / span 23;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    line-height: 1.875rem;
+  }
+
+  .devkit-ext-fw-main-wrapper .devkit-home-content p:first-of-type {
+    margin-top: 0;
+  }
+}

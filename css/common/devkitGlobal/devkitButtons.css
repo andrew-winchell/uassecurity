@@ -1,0 +1,101 @@
+/* Following CSS rules cannot be altered. */
+.form-button-wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.link-button {
+  background: none;
+  text-decoration: underline;
+  color: var(--ocean-blue);
+  font-size: 1rem;
+  margin: 6px;
+}
+.primary,
+.secondary {
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+  margin: 6px 6px 6px 0;
+}
+.primary {
+  background: var(--primary-blue);
+}
+.secondary {
+  background: var(--secondary-grey);
+}
+.disabled {
+  margin: 6px 6px 6px 0;
+  background: var(--cyan);
+  color: var(--slate);
+  opacity: 0.8;
+}
+.primary.mini,
+.secondary.mini,
+.disabled.mini {
+  padding: 4px 5px 3px 5px;
+  font-size: 0.75rem;
+}
+.primary.small,
+.secondary.small,
+.disabled.small {
+  padding: 6px 7px 5px 7px;
+  font-size: 0.75rem;
+}
+.primary.default,
+.secondary.default,
+.disabled.default {
+  padding: 8px 15px 8px 15px;
+  font-size: 0.875rem;
+}
+.primary.large,
+.secondary.large,
+.disabled.large {
+  padding: 10px 15px 12px 15px;
+  font-size: 1.125rem;
+}
+.primary:hover,
+.secondary:hover {
+  background: var(--hover-blue);
+}
+/* Following CSS rules are used for demo purposes in this app. It can be altered. */
+.devkit-buttons-wrapper .devkit-buttons-description {
+  font-weight: 600;
+}
+.devkit-buttons-wrapper h2,
+.devkit-buttons-wrapper .devkit-h2 {
+  margin: 12px auto;
+}
+.devkit-buttons-wrapper h3:first-of-type,
+.devkit-buttons-wrapper .devkit-h3:first-of-type {
+  margin-top: 12px;
+}
+.devkit-buttons-wrapper p {
+  margin-right: 12px;
+}
+.devkit-buttons-wrapper p a:link {
+  color: var(--link-active);
+}
+.devkit-buttons-wrapper p a:hover {
+  color: var(--black);
+  text-decoration: underline;
+}
+.devkit-buttons-wrapper p a:visited {
+  color: var(--purple);
+}
+.devkit-buttons-wrapper .devkit-button-heading {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 24px auto 6px auto;
+}
+.devkit-buttons-wrapper button {
+  margin-right: 24px;
+  border: 0;
+}
+@media screen and (min-width: 960px) {
+  .devkit-buttons-wrapper p {
+    margin-right: 36px;
+  }
+}

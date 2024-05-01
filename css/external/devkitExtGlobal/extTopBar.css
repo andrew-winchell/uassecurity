@@ -1,0 +1,163 @@
+:root {
+  margin: 0 auto;
+}
+
+.devkit-dot-microbar-wrapper {
+  background: var(--ext-microhead-background);
+  color: var(--white);
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr repeat(3, 16px 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  width: auto;
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar a:link,
+.devkit-dot-microbar-wrapper .devkit-dot-microbar a:visited,
+.devkit-dot-microbar-wrapper .devkit-dot-microbar a:hover,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar a:link,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar a:visited,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar a:hover {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-logo-wrapper,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-logo-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-logo-wrapper img,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-logo-wrapper img {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  background: var(--white);
+  border-radius: 50%;
+}
+
+.devkit-dot-microbar-wrapper
+  .devkit-dot-microbar
+  .dot-logo-wrapper
+  .dot-logo-title,
+.devkit-dot-microbar-wrapper
+  .devkit-fw-dot-microbar
+  .dot-logo-wrapper
+  .dot-logo-title {
+  margin-left: 2px;
+  font-size: 0.875rem;
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-links-wrapper,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-links-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / span 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 12px;
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-links-wrapper ul,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-links-wrapper ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.devkit-dot-microbar-wrapper
+  .devkit-dot-microbar
+  .dot-links-wrapper
+  ul
+  li:last-of-type,
+.devkit-dot-microbar-wrapper
+  .devkit-fw-dot-microbar
+  .dot-links-wrapper
+  ul
+  li:last-of-type {
+  margin-right: 0;
+}
+
+.devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-links-wrapper ul li,
+.devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-links-wrapper ul li {
+  display: inline;
+  margin-right: 18px;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-dot-microbar-wrapper .devkit-fw-dot-microbar {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 1%;
+  }
+  .devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-logo-wrapper {
+    margin-left: 0;
+  }
+  .devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-links-wrapper {
+    margin-right: 0;
+  }
+  .devkit-dot-microbar-wrapper .devkit-dot-microbar {
+    width: 100%;
+  }
+  .devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-logo-wrapper {
+    margin-left: 28px;
+  }
+  .devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-links-wrapper {
+    margin-left: 0;
+    margin-right: 36px;
+  }
+
+  .devkit-dot-microbar-wrapper .devkit-dot-microbar,
+  .devkit-dot-microbar-wrapper .devkit-fw-dot-microbar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: 30px;
+    grid-template-rows: 30px;
+  }
+
+  .devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-logo-wrapper,
+  .devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-logo-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 9;
+    grid-column: 1 / span 9;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-dot-microbar-wrapper .devkit-dot-microbar .dot-links-wrapper,
+  .devkit-dot-microbar-wrapper .devkit-fw-dot-microbar .dot-links-wrapper {
+    -ms-grid-column: 14;
+    -ms-grid-column-span: 10;
+    grid-column: 14 / span 10;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

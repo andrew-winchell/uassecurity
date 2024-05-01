@@ -1,0 +1,36 @@
+.devkit-actions-wrapper {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+.devkit-actions-wrapper a:link,
+.devkit-actions-wrapper a:hover,
+.devkit-actions-wrapper a:visited {
+  color: var(--slate);
+  text-decoration: none;
+}
+.devkit-actions-wrapper .devkit-subscribe-icons-wrapper:hover,
+.devkit-actions-wrapper .devkit-subscribe-icons-wrapper:focus {
+  background: var(--light-grey);
+}
+.devkit-actions-wrapper .devkit-subscribe-icons-wrapper {
+  position: relative;
+  padding: 12px 8px 9px 12px;
+  margin-top: 9px;
+  cursor: pointer;
+  border: solid 1px var(--background-grey);
+  color: var(--slate);
+}
+.devkit-actions-wrapper .devkit-subscribe-icons-wrapper .fa-envelope {
+  position: absolute;
+  font-size: 1.125rem;
+}
+.devkit-actions-wrapper .devkit-subscribe-icons-wrapper .fa-bell {
+  position: absolute;
+  top: 22px;
+  right: 86px;
+  font-size: 0.75rem;
+}
+.devkit-actions-wrapper .devkit-subscribe-icons-wrapper .devkit-icon-text {
+  margin-left: 28px;
+}

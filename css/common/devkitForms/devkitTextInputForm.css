@@ -1,0 +1,150 @@
+.devkit-text-input-form-wrapper {
+  display: flex;
+  color: var(--slate);
+  margin-left: 0;
+}
+
+.devkit-text-input-form-wrapper fieldset.devkit-text-input-fieldset-wrapper {
+  padding: 6px;
+}
+
+.devkit-text-input-form-wrapper fieldset {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  clear: both;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-required {
+  font-size: 1.625rem;
+  color: var(--red);
+  vertical-align: bottom;
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-input-error {
+  max-width: 300px;
+  border-left: 5px solid var(--red);
+  margin-top: 30px;
+  margin-bottom: 36px;
+  padding-left: 18px;
+  padding-top: 6px;
+  position: relative;
+  right: 22px;
+}
+
+.devkit-text-input-form-wrapper
+  fieldset
+  .devkit-input-error
+  .devkit-input-error-message {
+  color: var(--red);
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 3px;
+  padding-top: 3px;
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-input-error label {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-input-error input {
+  width: 200px;
+  height: 20px;
+  margin: 3px 0;
+  padding: 12px 6px;
+  font-size: 1rem;
+  border: 3px solid var(--red);
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-form-row {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-form-row label {
+  font-size: 1.125rem;
+}
+
+.devkit-text-input-form-wrapper
+  fieldset
+  .devkit-form-row
+  .devkit-input-success {
+  border: 3px solid var(--green);
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-form-row input,
+.devkit-text-input-form-wrapper fieldset .devkit-form-row input[type="file"] {
+  width: 200px;
+  height: 20px;
+  margin: 3px 0;
+  padding: 12px 6px;
+  border: solid 1px var(--darker-grey);
+  font-size: 1rem;
+}
+
+.devkit-text-input-form-wrapper
+  fieldset
+  .devkit-form-row
+  input::-moz-placeholder {
+  font-size: 1rem;
+}
+
+.devkit-text-input-form-wrapper
+  fieldset
+  .devkit-form-row
+  input:-ms-input-placeholder {
+  font-size: 1rem;
+}
+
+.devkit-text-input-form-wrapper fieldset .devkit-form-row input::placeholder {
+  font-size: 1rem;
+}
+
+.devkit-text-input-form-wrapper
+  fieldset
+  .devkit-form-row
+  .form-button-wrapper
+  .primary.default {
+  margin-right: 24px;
+  margin-left: 0;
+  padding: 7px 15px 6px 15px;
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+.devkit-text-input-form-wrapper
+  fieldset
+  .devkit-form-row
+  .form-button-wrapper
+  .secondary.default {
+  padding: 7px 15px 6px 15px;
+  font-size: 0.875rem;
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-text-input-form-wrapper fieldset.devkit-text-input-fieldset-wrapper {
+    padding: 24px;
+    font-size: 1rem;
+  }
+  .devkit-text-input-form-wrapper fieldset .devkit-form-row input,
+  .devkit-text-input-form-wrapper fieldset .devkit-form-row input[type="file"] {
+    min-width: 420px;
+  }
+
+  .devkit-text-input-form-wrapper fieldset .devkit-input-error {
+    right: 30px;
+  }
+  .devkit-text-input-form-wrapper fieldset .devkit-input-error input,
+  .devkit-text-input-form-wrapper
+    fieldset
+    .devkit-input-error
+    input[type="file"] {
+    min-width: 426px;
+  }
+}

@@ -1,0 +1,73 @@
+.devkit-modal-wrapper {
+  margin: 0 24px 12px 12px;
+}
+
+.devkit-modal-wrapper .devkit-buttons-wrapper button#modal-button,
+.devkit-modal-wrapper .devkit-buttons-wrapper button.devkit-code-button {
+  display: inline;
+}
+
+.devkit-modal-wrapper .devkit-modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+}
+
+.devkit-modal-wrapper .modal {
+  display: none;
+}
+
+.devkit-modal-wrapper .devkit-modal-overlay.active {
+  display: block;
+}
+
+.devkit-modal-wrapper .modal.active {
+  display: block;
+  z-index: 200;
+  border: 2px solid var(--darker-grey);
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 1%;
+  top: 0;
+  overflow: auto;
+}
+
+.devkit-modal-wrapper .modal.active .devkit-modal .devkit-modal-body {
+  background: var(--lighter-grey);
+  color: var(--slate);
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-modal-wrapper {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-modal-wrapper {
+    margin-left: 0;
+  }
+  .devkit-modal-wrapper h3,
+  .devkit-modal-wrapper .devkit-h3 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-modal-wrapper h3,
+  .devkit-modal-wrapper .devkit-h3 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+  .devkit-modal-wrapper .modal.active {
+    left: 30%;
+  }
+}

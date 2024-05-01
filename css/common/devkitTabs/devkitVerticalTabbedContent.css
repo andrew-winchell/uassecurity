@@ -1,0 +1,79 @@
+.devkit-vertical-tab-wrapper {
+  width: 330px;
+  z-index: 21;
+  padding-left: 6px;
+}
+
+.devkit-vertical-tab-wrapper h3,
+.devkit-vertical-tab-wrapper .devkit-h3 {
+  margin-top: 0;
+}
+
+.devkit-vertical-tab-wrapper .devkit-vertical-tabbed-area {
+  display: flex;
+  align-items: flex-start;
+}
+
+.devkit-vertical-tab-wrapper ul.devkit-vertical-tabs {
+  margin: 0;
+  padding-top: 6px;
+  padding-left: 0;
+}
+
+.devkit-vertical-tab-wrapper ul.devkit-vertical-tabs li {
+  display: block;
+  width: 80px;
+  border-right-width: 0;
+  list-style: none;
+  margin: 0 0 1px 0;
+  padding: 10px 6px 6px 6px;
+  background: var(--tab-background);
+  text-decoration: none;
+  color: var(--link-active);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+.devkit-vertical-tab-wrapper ul.devkit-vertical-tabs li.active {
+  background: var(--white);
+  color: var(--slate);
+  font-weight: 700;
+  position: relative;
+  right: -1px; /* we need this negative position for active vertical tab border. */
+  border: 1px solid var(--light-grey);
+  border-right: 0;
+  outline: none;
+}
+
+.devkit-vertical-tab-wrapper ul.devkit-vertical-tabs li:hover {
+  text-decoration: underline;
+}
+
+.devkit-vertical-tab-wrapper .devkit-vertical-content {
+  display: none;
+  margin-top: 6px;
+  min-height: 200px;
+  padding: 15px;
+  font-size: 1rem;
+  color: var(--slate);
+  line-height: 1.5rem;
+  border: 1px solid var(--light-grey);
+}
+
+.devkit-vertical-tab-wrapper .devkit-vertical-content.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-vertical-tab-wrapper {
+    width: 520px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .devkit-vertical-tab-wrapper {
+    padding-left: 0;
+  }
+}

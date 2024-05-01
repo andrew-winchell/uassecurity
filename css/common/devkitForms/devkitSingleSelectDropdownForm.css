@@ -1,0 +1,154 @@
+.devkit-single-select-dropdown-wrapper {
+  display: flex;
+  color: var(--slate);
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset.devkit-single-select-fieldset-wrapper {
+  padding: 12px;
+  min-width: 300px;
+}
+
+.devkit-single-select-dropdown-wrapper fieldset {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  clear: both;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.devkit-single-select-dropdown-wrapper fieldset .devkit-form-row {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  position: relative;
+  margin-bottom: 30px;
+  margin-bottom: 12px;
+  padding: 9px 3px;
+}
+
+.devkit-single-select-dropdown-wrapper fieldset .devkit-form-row label {
+  font-size: 1.125rem;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row
+  select::-ms-expand {
+  /* This is to hide default dropdown arrow in IE */
+  display: none;
+}
+
+.devkit-single-select-dropdown-wrapper fieldset .devkit-form-row select {
+  width: 320px;
+  padding: 9px 48px 9px 9px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  color: var(--slate);
+  font-size: 1rem;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row
+  select
+  optgroup.devkit-optgroup {
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.devkit-single-select-dropdown-wrapper fieldset .devkit-form-row select option {
+  padding: 6px;
+  font-size: 1rem;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row
+  select
+  option:hover {
+  background: var(--hover-blue);
+  color: var(--white);
+  padding: 10px 6px 0 6px;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row
+  select:disabled {
+  width: 320px;
+  background: var(--background-grey);
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row:nth-of-type(2n + 1):after,
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row:nth-of-type(2n):after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free", sans-serif;
+  color: var(--charcoal);
+  top: 37px;
+  height: 34px;
+  padding: 18px 0px 0px 8px;
+  position: absolute;
+  pointer-events: none;
+  visibility: visible;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row:nth-of-type(2n + 1):after {
+  right: 54px;
+}
+
+.devkit-single-select-dropdown-wrapper
+  fieldset
+  .devkit-form-row:nth-of-type(2n):after {
+  right: 60px;
+}
+
+.devkit-single-select-dropdown-wrapper .devkit-required {
+  font-size: 1.625rem;
+  color: var(--red);
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-single-select-dropdown-wrapper
+    fieldset.devkit-select-fieldset-wrapper {
+    min-width: 400px;
+    padding: 24px;
+    font-size: 1rem;
+  }
+  .devkit-single-select-dropdown-wrapper fieldset .devkit-form-row {
+    margin-bottom: 12px;
+    padding: 12px 6px;
+  }
+
+  .devkit-single-select-dropdown-wrapper
+    fieldset
+    .devkit-form-row
+    .devkit-form-row:nth-of-type(2n + 1):after,
+  .devkit-single-select-dropdown-wrapper
+    fieldset
+    .devkit-form-row
+    .devkit-form-row:nth-of-type(2n):after {
+    top: 40px;
+  }
+
+  .devkit-single-select-dropdown-wrapper fieldset .devkit-form-row select {
+    width: 320px;
+  }
+}

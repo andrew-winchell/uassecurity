@@ -1,0 +1,41 @@
+.devkit-main-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: var(--slate);
+}
+
+.devkit-main-head .devkit-global-icon-wrapper:hover,
+.devkit-main-head .devkit-global-icon-wrapper:focus {
+  background: var(--light-grey);
+}
+
+.devkit-main-head .devkit-global-icon-wrapper {
+  width: 65px;
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  padding: 9px 8px 9px 12px;
+  color: var(--slate);
+  cursor: pointer;
+  border: solid 1px var(--background-grey);
+}
+
+.devkit-main-head .devkit-global-icon-wrapper .fas.fa-print,
+.devkit-main-head .devkit-global-icon-wrapper .fas.fa-share-alt {
+  font-size: 1.125rem;
+}
+
+.devkit-main-head .devkit-global-icon-wrapper .devkit-icon-text {
+  display: inline;
+  padding-left: 10px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-main-head .devkit-global-icon-wrapper {
+    margin-top: 4px;
+  }
+}

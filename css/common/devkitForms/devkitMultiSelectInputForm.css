@@ -1,0 +1,140 @@
+.devkit-multi-select-form-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--slate);
+  margin-left: 0;
+  font-size: 0.875rem;
+}
+
+.devkit-multi-select-form-wrapper
+  fieldset.devkit-multi-select-fieldset-wrapper {
+  padding: 12px;
+  min-width: 280px;
+}
+
+.devkit-multi-select-form-wrapper fieldset {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  clear: both;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.devkit-multi-select-form-wrapper .devkit-label-wrapper .devkit-dropdown-label {
+  display: block;
+  font-weight: 600;
+}
+
+.devkit-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-multi-select-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin-top: 12px;
+  padding: 6px;
+  border: solid 1px var(--light-grey);
+}
+
+.devkit-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-multi-select-dropdown
+  .devkit-dropdown-label {
+  font-weight: 500;
+  text-align: left;
+}
+
+.devkit-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-multi-select-dropdown
+  .fa-caret-down {
+  font-size: 1.25rem;
+  color: var(--charcoal);
+}
+
+.devkit-multi-select-form-wrapper .devkit-multi-select-options-wrapper {
+  display: none;
+  width: 212px;
+  margin-left: inherit;
+  padding-top: 24px;
+  border-right: solid 1px var(--light-grey);
+  border-left: solid 1px var(--light-grey);
+  border-bottom: solid 1px var(--light-grey);
+}
+
+.devkit-multi-select-form-wrapper .devkit-multi-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+.devkit-multi-select-form-wrapper
+  .devkit-multi-checkbox-wrapper
+  [type="checkbox"]
+  + label {
+  padding-left: 6px;
+}
+
+.devkit-multi-select-form-wrapper .devkit-pills-wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  max-width: 360px;
+  margin-left: 24px;
+}
+
+.devkit-multi-select-form-wrapper .devkit-pills-wrapper .devkit-pill {
+  display: none;
+}
+
+.devkit-multi-select-form-wrapper
+  .devkit-pills-wrapper
+  .devkit-pill
+  .devkit-pill-wrapper {
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 6px 9px 2px 9px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--light-blue);
+  color: var(--white);
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-multi-select-form-wrapper
+    fieldset.devkit-multi-select-fieldset-wrapper {
+    min-width: 300px;
+    padding: 24px;
+    font-size: 1rem;
+  }
+
+  .devkit-multi-select-form-wrapper .devkit-label-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .devkit-multi-select-form-wrapper
+    .devkit-label-wrapper
+    .devkit-dropdown-label {
+    width: 150px;
+    text-align: right;
+  }
+
+  .devkit-multi-select-form-wrapper
+    .devkit-label-wrapper
+    .devkit-multi-select-dropdown {
+    margin-left: 24px;
+  }
+
+  .devkit-multi-select-form-wrapper .devkit-multi-select-options-wrapper {
+    width: 212px;
+    margin-left: 174px;
+  }
+}

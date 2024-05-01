@@ -1,0 +1,106 @@
+.devkit-slider-wrapper {
+  width: 280px;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--light-blue);
+  border: solid 1px var(--primary-blue);
+  outline: none;
+  cursor: pointer;
+}
+.ui-slider-horizontal .ui-slider-handle {
+  top: -7px;
+  margin-left: -10px;
+}
+/* The switch - the box around the slider */
+.devkit-toggle-switch-wrapper {
+  margin-top: 36px;
+}
+.devkit-toggle-switch-wrapper .devkit-toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.devkit-toggle-switch-wrapper .devkit-toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.devkit-toggle-switch-wrapper .devkit-toggle-switch .devkit-toggle {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--grey);
+  transition: 0.4s;
+}
+.devkit-toggle-switch-wrapper .devkit-toggle-switch .devkit-toggle:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background: var(--white);
+  transition: 0.4s;
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  input:checked
+  + .devkit-toggle {
+  background: var(--light-blue);
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  input:focus
+  + .devkit-toggle {
+  box-shadow: 0 0 1px var(--primary-blue);
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  input
+  + .devkit-toggle:after {
+  display: block;
+  content: "Disabled";
+  margin-top: 42px;
+  margin-left: 2px;
+  font-weight: 600;
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  input:checked
+  + .devkit-toggle:before {
+  transform: translateX(26px);
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  input:checked
+  + .devkit-toggle:after {
+  display: block;
+  content: "Enabled";
+  margin-top: 42px;
+  margin-left: 2px;
+  font-weight: 600;
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  .devkit-toggle.devkit-round {
+  border-radius: 34px;
+}
+.devkit-toggle-switch-wrapper
+  .devkit-toggle-switch
+  .devkit-toggle.devkit-round:before {
+  border-radius: 50%;
+}
+@media screen and (min-width: 768px) {
+  .devkit-slider-wrapper {
+    width: 500px;
+  }
+}

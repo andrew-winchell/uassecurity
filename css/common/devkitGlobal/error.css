@@ -1,0 +1,84 @@
+.devkit-err-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 500px;
+  margin-top: 12px;
+}
+.devkit-err-wrapper .devkit-err-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: var(--slate);
+  font-weight: 500;
+}
+.devkit-err-wrapper .devkit-err-message-wrapper .devkit-error-code {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.devkit-err-wrapper .devkit-err-message-wrapper .devkit-error-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.devkit-err-wrapper .devkit-err-message-wrapper .devkit-error-action-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+}
+.devkit-err-wrapper
+  .devkit-err-message-wrapper
+  .devkit-error-action-btns
+  .primary-link-button,
+.devkit-err-wrapper
+  .devkit-err-message-wrapper
+  .devkit-error-action-btns
+  .secondary-link-button {
+  margin: 6px 6px 6px 0;
+  padding: 6px 12px;
+  border: none;
+  color: var(--white);
+  text-decoration: none;
+  cursor: pointer;
+}
+.devkit-err-wrapper
+  .devkit-err-message-wrapper
+  .devkit-error-action-btns
+  .primary-link-button {
+  background: var(--primary-blue);
+}
+.devkit-err-wrapper
+  .devkit-err-message-wrapper
+  .devkit-error-action-btns
+  .secondary-link-button {
+  background: var(--secondary-grey);
+}
+.devkit-err-wrapper
+  .devkit-err-message-wrapper
+  .devkit-error-action-btns
+  .primary-link-button:hover,
+.devkit-err-wrapper
+  .devkit-err-message-wrapper
+  .devkit-error-action-btns
+  .secondary-link-button:hover {
+  background: var(--hover-blue);
+}
+@media screen and (min-width: 960px) {
+  .devkit-err-wrapper {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .devkit-err-wrapper .devkit-err-message-wrapper {
+    margin-left: 24px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .devkit-err-wrapper {
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,20 @@
+.devkit-al-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.devkit-al-wrapper .devkit-ordered-list-wrapper {
+  width: 300px;
+}
+
+.devkit-al-wrapper .devkit-unordered-list-wrapper {
+  width: 350px;
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-al-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

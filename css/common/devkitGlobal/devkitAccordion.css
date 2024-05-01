@@ -1,0 +1,62 @@
+.devkit-accordion-wrapper {
+  width: 100%;
+  margin: 0 0 24px 0;
+}
+
+.devkit-accordion-wrapper .devkit-accordion-head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--lighter-grey);
+  margin: 12px 0 0 0;
+  padding: 6px 12px 9px 12px;
+}
+
+.devkit-accordion-wrapper .devkit-accordion-head .devkit-expand-collapse {
+  margin-left: 6px;
+  margin-top: 2px;
+  color: var(--slate);
+}
+
+.devkit-accordion-wrapper .devkit-accordion-head .fa-chevron-right {
+  float: left;
+  color: var(--secondary-grey);
+}
+
+.devkit-accordion-wrapper .devkit-accordion-head:hover {
+  background: var(--light-grey);
+}
+
+.devkit-accordion-wrapper .devkit-accordion-head.selected {
+  background: var(--primary-blue);
+  color: var(--white);
+}
+
+.devkit-accordion-wrapper
+  .devkit-accordion-head.selected
+  .devkit-expand-collapse {
+  color: var(--white);
+}
+
+.devkit-accordion-wrapper .devkit-accordion-head.selected:hover {
+  background: var(--hover-blue);
+}
+
+.devkit-accordion-wrapper .devkit-accordion-body {
+  display: none;
+  border: solid 2px var(--lighter-grey);
+  padding: 12px;
+}
+
+.devkit-accordion-wrapper .devkit-accordion-body p {
+  line-height: 1.5rem;
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-accordion-wrapper {
+    width: 500px;
+  }
+}

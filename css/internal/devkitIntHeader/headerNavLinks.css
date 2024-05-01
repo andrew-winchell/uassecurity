@@ -1,0 +1,45 @@
+.header-links-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-links-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .header-links-wrapper ul.top-links {
+    display: block;
+    padding-left: 0;
+  }
+  .header-links-wrapper ul.top-links li.dropdown-link {
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: var(--charcoal);
+    color: var(--white);
+    cursor: pointer;
+  }
+  .header-links-wrapper ul.top-links li {
+    display: inline-block;
+    margin-right: 24px;
+    font-weight: 700;
+    list-style-type: none;
+    line-height: 1.5rem;
+  }
+  .header-links-wrapper ul.top-links li a:link,
+  .header-links-wrapper ul.top-links li a:visited {
+    color: var(--slate);
+    /** These are needed to avoid li items shifting to the right when hovering the link. **/
+    padding: 6px;
+    border-radius: 4px;
+    background: var(--white);
+    text-decoration: none;
+  }
+  .header-links-wrapper ul.top-links li a:hover {
+    padding: 6px;
+    border-radius: 4px;
+    background: var(--charcoal);
+    color: var(--white);
+  }
+}

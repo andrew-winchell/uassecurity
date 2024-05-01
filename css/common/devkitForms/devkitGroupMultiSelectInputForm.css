@@ -1,0 +1,142 @@
+.devkit-group-multi-select-form-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  color: var(--slate);
+  margin-left: 0;
+  font-size: 0.875rem;
+}
+
+.devkit-group-multi-select-form-wrapper
+  fieldset.devkit-group-select-fieldset-wrapper {
+  padding: 12px;
+  min-width: 280px;
+}
+
+.devkit-group-multi-select-form-wrapper fieldset {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-dropdown-label {
+  display: block;
+  font-weight: 600;
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-group-select-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  margin-top: 12px;
+  padding: 6px;
+  border: solid 1px var(--light-grey);
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-group-select-dropdown
+  .devkit-dropdown-label {
+  font-weight: 500;
+  text-align: left;
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-label-wrapper
+  .devkit-group-select-dropdown
+  .fa-caret-down {
+  font-size: 1.25rem;
+  color: var(--charcoal);
+}
+
+.devkit-group-multi-select-form-wrapper .devkit-group-select-options-wrapper {
+  display: none;
+  width: 232px;
+  margin-left: inherit;
+  padding-top: 24px;
+  border-right: solid 1px var(--light-grey);
+  border-left: solid 1px var(--light-grey);
+  border-bottom: solid 1px var(--light-grey);
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-group-select-options-wrapper
+  .devkit-group-checkbox-wrapper
+  label {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-group-select-options-wrapper
+  .devkit-group-checkbox-wrapper
+  [type="checkbox"]
+  + label {
+  padding-left: 6px;
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-group-select-options-wrapper
+  .devkit-group-children {
+  cursor: pointer;
+  margin-left: 24px;
+  padding-left: 6px;
+}
+
+.devkit-group-multi-select-form-wrapper
+  .devkit-group-select-options-wrapper
+  .devkit-group-checkbox-wrapper,
+.devkit-group-multi-select-form-wrapper
+  .devkit-group-select-options-wrapper
+  .devkit-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-group-multi-select-form-wrapper
+    fieldset.devkit-group-select-fieldset-wrapper {
+    min-width: 400px;
+    padding: 24px;
+    font-size: 1rem;
+  }
+
+  .devkit-group-multi-select-form-wrapper .devkit-label-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .devkit-group-multi-select-form-wrapper
+    .devkit-label-wrapper
+    .devkit-dropdown-label,
+  .devkit-group-multi-select-form-wrapper
+    .devkit-label-wrapper
+    .devkit-multi-select-dropdown {
+    display: inline-block;
+  }
+
+  .devkit-group-multi-select-form-wrapper
+    .devkit-label-wrapper
+    .devkit-dropdown-label {
+    width: 160px;
+    text-align: right;
+  }
+
+  .devkit-group-multi-select-form-wrapper
+    .devkit-label-wrapper
+    .devkit-group-select-dropdown {
+    width: 200px;
+    margin-left: 24px;
+  }
+
+  .devkit-group-multi-select-form-wrapper .devkit-group-select-options-wrapper {
+    width: 212px;
+    margin-left: 184px; /* This margin will change based on the dropdown placement. */
+  }
+}

@@ -1,0 +1,42 @@
+:root {
+  margin: 0 auto;
+  /* -- MOBILE PHONES -- */
+  --4-column-grid: {
+    -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+    grid-template-columns: 1fr repeat(3, 16px 1fr);
+  }
+
+  --4-column-grid-all-columns: {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / span 7;
+  }
+
+  /* -- TABLETS and ABOVE -- */
+  --12-column-grid: {
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+  }
+
+  /* Container element spans all 12 columns of the grid */
+  --12-column-grid-span-all-columns: {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 23;
+    grid-column: 1 / span 23;
+  }
+
+  /* Container element spans first 3 columns or 1/3rd of the grid */
+  --12-column-grid-3-9-split-first-columns: {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+  }
+
+  /* Container element spans last 9 columns or 2/3 of the grid */
+  --12-column-grid-3-9-split-last-columns: {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 17;
+    grid-column: 7 / span 17;
+  }
+}

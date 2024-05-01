@@ -1,0 +1,7 @@
+.devkit-changelog-content {
+  display: block;
+}
+.devkit-changelog-content .devkit-release-head {
+  border-top: 1px solid var(--secondary-grey);
+  padding-top: 12px;
+}

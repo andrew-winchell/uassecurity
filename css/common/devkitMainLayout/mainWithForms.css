@@ -1,0 +1,332 @@
+:root {
+  margin: 0 auto;
+}
+
+/* This is needed to remove grey border on top of
+external main content area in mobile phones.*/
+
+.devkit-forms-wrapper.devkit-no-border {
+  border-top: 0;
+}
+
+.devkit-forms-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr repeat(3, 16px 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  width: 100%;
+  margin: 12px auto;
+  border-top: solid 2px var(--lighter-grey);
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  margin-left: 12px;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-vertical-tab-area {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab {
+  margin: 0;
+  padding-top: 6px;
+  padding-left: 0;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li {
+  display: block;
+  width: 80px;
+  border-right-width: 0;
+  list-style: none;
+  margin: 0 0 1px 0;
+  padding: 10px 6px 6px 6px;
+  background: var(--tab-background);
+  text-decoration: none;
+  color: var(--link-active);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li a:link,
+.devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li a:hover,
+.devkit-forms-wrapper
+  .devkit-forms-tab-wrapper
+  ul.devkit-forms-tab
+  li
+  a:visited {
+  color: var(--link-active);
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li.active {
+  background: var(--white);
+  color: var(--slate);
+  font-weight: 700;
+  position: relative;
+  right: -1px; /* we need this negative position for active vertical tab border. */
+  border: 1px solid var(--light-grey);
+  border-right: 0;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li:hover {
+  text-decoration: underline;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-form-content {
+  display: none;
+  min-height: 510px;
+  margin-top: 6px;
+  padding: 15px;
+  font-size: 1rem;
+  color: var(--slate);
+  line-height: 1.5rem;
+  border: 1px solid var(--light-grey);
+}
+
+.devkit-forms-wrapper
+  .devkit-forms-tab-wrapper
+  .devkit-form-content
+  .devkit-code-button {
+  margin-top: 12px;
+}
+
+.devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-form-content.active {
+  display: block;
+}
+
+.devkit-forms-wrapper
+  .devkit-forms-tab-wrapper
+  .devkit-form-content.active
+  pre {
+  width: 350px;
+}
+
+.devkit-forms-wrapper .devkit-main-head {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.devkit-forms-wrapper .devkit-left-nav-link-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 5;
+  grid-row: 5;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-forms-wrapper {
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 19;
+    grid-column: 3 / span 19;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li {
+    width: 130px;
+  }
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-form-content {
+    min-height: 420px;
+  }
+  .devkit-forms-wrapper
+    .devkit-forms-tab-wrapper
+    .devkit-form-content.active
+    pre {
+    width: 550px;
+  }
+
+  .devkit-forms-wrapper .devkit-main-head {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 19;
+    grid-column: 3 / span 19;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-forms-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 11;
+    grid-column: 3 / span 11;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-forms-wrapper {
+    border-top: 0;
+  }
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 17;
+    grid-column: 7 / span 17;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-right: 6px;
+    margin-left: 0;
+  }
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-vertical-tab-area {
+    display: block;
+  }
+
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab {
+    margin: 0;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li {
+    width: 90px;
+    height: 90px;
+    border-bottom-width: 0;
+    margin: 0 2px 0 0;
+    padding: 8px 14px;
+    list-style: none;
+    background: var(--tab-background);
+    text-decoration: none;
+    color: var(--link-active);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+
+  .devkit-forms-wrapper
+    .devkit-forms-tab-wrapper
+    ul.devkit-forms-tab
+    li.active {
+    background: var(--white);
+    color: var(--slate);
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 1px solid var(--light-grey);
+    border-bottom: 0;
+  }
+
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li:hover {
+    text-decoration: underline;
+  }
+
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-form-content {
+    display: none;
+    margin-top: -2px;
+    padding: 15px;
+    font-size: 1rem;
+    color: var(--slate);
+    line-height: 1.5rem;
+    border: 1px solid var(--light-grey);
+  }
+
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper .devkit-form-content.active {
+    display: block;
+  }
+  .devkit-forms-wrapper
+    .devkit-forms-tab-wrapper
+    .devkit-form-content.active
+    pre {
+    width: 90%;
+  }
+
+  .devkit-forms-wrapper .devkit-main-head {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 17;
+    grid-column: 7 / span 17;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-left: 0;
+  }
+
+  .devkit-forms-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 17;
+    grid-column: 5 / span 17;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li {
+    width: 100px;
+    height: 56px;
+  }
+
+  .devkit-forms-wrapper .devkit-main-head {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 17;
+    grid-column: 5 / span 17;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-forms-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / span 4;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 18;
+    grid-column: 5 / span 18;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .devkit-forms-wrapper .devkit-forms-tab-wrapper ul.devkit-forms-tab li {
+    width: auto;
+    height: auto;
+  }
+
+  .devkit-forms-wrapper .devkit-main-head {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 18;
+    grid-column: 5 / span 18;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-forms-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}

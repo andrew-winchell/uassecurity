@@ -1,0 +1,104 @@
+.ext-head-nav-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ext-head-nav-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .ext-head-nav-wrapper ul.ext-head-nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+  }
+  .ext-head-nav-wrapper ul.ext-head-nav-items li.ext-head-nav-item {
+    padding: 2px 6px;
+    border-radius: 4px;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 700;
+    list-style-type: none;
+  }
+  .ext-head-nav-wrapper ul.ext-head-nav-items li.ext-head-nav-item a:link,
+  .ext-head-nav-wrapper ul.ext-head-nav-items li.ext-head-nav-item a:visited {
+    color: var(--white);
+    /** These are needed to avoid li items shifting to the right when hovering the link. **/
+    padding: 6px;
+    border-radius: 4px;
+    background: var(--external-head-active-background);
+    text-decoration: none;
+  }
+  .ext-head-nav-wrapper ul.ext-head-nav-items li.ext-head-nav-item a:hover {
+    padding: 6px;
+    border-radius: 4px;
+    background: var(--external-head-active-background);
+    color: var(--white);
+  }
+  .ext-head-nav-wrapper ul.ext-head-nav-items li.faa-other {
+    background: var(--external-gold);
+    position: relative;
+  }
+  .ext-head-nav-wrapper ul.ext-head-nav-items li.faa-other ul.ext-nav-dropdown {
+    display: none;
+    list-style-type: none;
+  }
+  .ext-head-nav-wrapper
+    ul.ext-head-nav-items
+    li.faa-other:hover
+    ul.ext-nav-dropdown {
+    display: block;
+    width: 275px;
+    background: rgba(255, 255, 255, 0.98);
+    border: 3px solid var(--external-gold);
+    border-radius: 4px 0 4px 4px;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 60;
+  }
+  .ext-head-nav-wrapper
+    ul.ext-head-nav-items
+    li.faa-other:hover
+    ul.ext-nav-dropdown
+    li.ext-head-submenu-item {
+    display: block;
+    padding: 6px;
+    color: var(--slate);
+    border-bottom: 1px solid var(--external-list-border);
+    font-weight: 500;
+  }
+  .ext-head-nav-wrapper
+    ul.ext-head-nav-items
+    li.faa-other:hover
+    ul.ext-nav-dropdown
+    li.ext-head-submenu-item
+    a:link,
+  .ext-head-nav-wrapper
+    ul.ext-head-nav-items
+    li.faa-other:hover
+    ul.ext-nav-dropdown
+    li.ext-head-submenu-item
+    a:visited,
+  .ext-head-nav-wrapper
+    ul.ext-head-nav-items
+    li.faa-other:hover
+    ul.ext-nav-dropdown
+    li.ext-head-submenu-item
+    a:hover {
+    color: var(--slate);
+  }
+  .ext-head-nav-wrapper
+    ul.ext-head-nav-items
+    li.faa-other:hover
+    ul.ext-nav-dropdown
+    li.ext-head-submenu-item:hover {
+    background: var(--external-gold);
+  }
+}

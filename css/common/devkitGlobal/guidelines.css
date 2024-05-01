@@ -1,0 +1,45 @@
+.devkit-guidelines-wrapper .devkit-warning-message-wrapper {
+  margin: 24px auto;
+}
+
+.devkit-guidelines-wrapper img {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-guidelines-wrapper .devkit-desc-list li {
+    line-height: 1.875rem;
+  }
+
+  .devkit-guidelines-wrapper h2,
+  .devkit-guidelines-wrapper .devkit-h2 {
+    margin-top: 24px;
+  }
+
+  .devkit-guidelines-wrapper h4,
+  .devkit-guidelines-wrapper .devkit-h4 {
+    margin: 0;
+  }
+
+  .devkit-guidelines-wrapper .devkit-warning-message-wrapper {
+    margin: 36px auto;
+  }
+
+  .devkit-guidelines-wrapper
+    .devkit-warning-message-wrapper
+    .devkit-message-body {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-guidelines-wrapper img {
+    width: 75%;
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
+}

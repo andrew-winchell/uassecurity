@@ -1,0 +1,19 @@
+.devkit-home-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--slate);
+  line-height: 1.5rem;
+}
+.devkit-home-content p {
+  margin: 6px 0;
+}
+.devkit-home-content .devkit-help-link {
+  margin-bottom: 18px;
+}
+.devkit-home-content .devkit-help-link-bold {
+  margin-top: 18px;
+  font-weight: 600;
+}

@@ -1,0 +1,61 @@
+:root {
+  --white: #ffffff;
+  --light-blue: #0076c0;
+  --dark-blue: #002664;
+  --lighter-grey: #e9eaed;
+  --slate: #333333;
+  --black: #000;
+  --charcoal: #353535;
+  --primary-blue: #003e7e;
+  --secondary-grey: #6e7476;
+  --light-grey: #cccccc;
+  --navy-blue: #0071bc;
+  --background-grey: #d0d0d0;
+  --whaleblue: #005690;
+  --ocean-blue: #0d76bd;
+  --hover-blue: #0e76bd;
+  --grey: #e6e6e6;
+  --link-active: var(--whaleblue);
+  --purple: #7a0098;
+  --link-visited: var(--purple);
+  --darker-grey: #797d7f;
+  --asbestos: #aab3b6;
+  --cyan: #d7dada;
+
+  /* Bottom Bar blue gradient background colors */
+  --bottom-bar-dark-blue: #002663;
+  --bottom-bar-darker-blue: #000933;
+
+  /* Footer gradient background colors */
+  --footer-lighter-grey-background: #efefef;
+  --footer-light-grey-background: var(--grey);
+
+  --dialog-background: var(--ocean-blue);
+  --tab-background: var(--grey);
+  --tab-hover-background: var(--light-blue);
+
+  --table-grey: #f4f6f9;
+
+  /* Alert Colors*/
+  --green: #22763b;
+  --applegreen: #e7f4e4;
+  --red: #c32026;
+  --tutu: #f9dede;
+  --yellow: #fdb81e;
+  --varden: #fff1d2;
+  --sky-blue: #02bfe7;
+  --light-cyan: #e1f3f8;
+
+  /* External Template color vars */
+  --ext-microhead-background: #15396c;
+  --external-dark-blue: #003e7e;
+  --external-nav-active-background: #111111;
+  --external-gold: #886a05;
+  --external-list-border: #dddddd;
+
+  --ext-header-top-border: #b28706;
+
+  --ext-footer-top-border: #937206;
+  --ext-footer-bottom-border: #00264d;
+  --ext-dot-footer-gradient: #f3f3f3;
+}

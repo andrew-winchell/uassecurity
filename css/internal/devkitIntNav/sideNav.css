@@ -1,0 +1,98 @@
+/* This CSS file has styles for vertical navigation on the side.
+For horizontal navigation bar styles, please refer to navBar.css
+This CSS file is not being used anywhere. */
+
+.devkit-left-nav-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-left-nav-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-left-nav-wrapper {
+    display: block;
+    width: 250px;
+    margin-top: 6px;
+    margin-left: 14px;
+    position: relative;
+    background: var(--white);
+    border: solid 2px var(--lighter-grey);
+    border-radius: 4px;
+  }
+
+  .devkit-left-nav-wrapper .devkit-nav-heading {
+    background: var(--lighter-grey);
+    border-bottom: solid 1px var(--light-grey);
+    color: var(--dark-blue);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 16px;
+  }
+
+  .devkit-left-nav-wrapper li.devkit-nav-link,
+  .devkit-left-nav-wrapper li.devkit-inner-nav-link {
+    list-style-type: none;
+  }
+
+  .devkit-left-nav-wrapper ul.devkit-nav-links {
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .devkit-left-nav-wrapper ul.devkit-nav-links li.devkit-nav-link {
+    display: block;
+    line-height: 2.25rem;
+    border-bottom: solid 1px var(--lighter-grey);
+    margin-bottom: 9px;
+    font-weight: 600;
+  }
+  .devkit-left-nav-wrapper ul.devkit-nav-links li.devkit-nav-link a:link,
+  .devkit-left-nav-wrapper ul.devkit-nav-links li.devkit-nav-link a:visited {
+    color: var(--slate);
+    text-decoration: none;
+  }
+  .devkit-left-nav-wrapper
+    ul.devkit-nav-links
+    li.devkit-nav-link
+    span.devkit-main-menu-link:after {
+    content: "\25bc";
+    color: var(--dark-blue);
+  }
+
+  .devkit-left-nav-wrapper ul.devkit-nav-links li.devkit-nav-link:last-of-type {
+    border-bottom: 0;
+  }
+  .devkit-left-nav-wrapper li.devkit-nav-link ul.devkit-nav-dropdown {
+    display: none;
+  }
+
+  .devkit-left-nav-wrapper li.devkit-inner-nav-link {
+    font-weight: 400;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-left-nav-wrapper {
+    width: 300px;
+    margin-left: 24px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  & .devkit-left-nav-wrapper {
+    width: 310px;
+    margin-top: 6px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-left-nav-wrapper {
+    width: 330px;
+    margin-top: 22px;
+  }
+}

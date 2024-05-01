@@ -1,0 +1,40 @@
+.devkit-ext-site-logo {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.devkit-ext-site-logo img {
+  display: none;
+}
+
+.devkit-ext-site-logo .devkit-logo-title {
+  color: var(--white);
+  width: 200px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-ext-site-logo .devkit-logo-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-ext-site-logo {
+    margin-top: 0;
+  }
+  .devkit-ext-site-logo img {
+    display: inline;
+    width: 84px;
+    height: 84px;
+    padding-bottom: 6px;
+  }
+
+  .devkit-ext-site-logo .devkit-logo-title {
+    font-size: 2.25rem;
+    line-height: 1.5rem;
+  }
+}

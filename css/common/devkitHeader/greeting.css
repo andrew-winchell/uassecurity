@@ -1,0 +1,15 @@
+.devkit-greeting-wrapper {
+  display: none;
+  /* Following CSS rules are used in larger screens and in hamburger menu. */
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  background: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-greeting-wrapper {
+    display: none;
+    font-size: 1.125rem;
+  }
+}

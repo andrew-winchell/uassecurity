@@ -1,0 +1,25 @@
+#devkit-skip-to-main {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 100%;
+  margin-left: 0;
+}
+#devkit-skip-to-main a {
+  position: absolute;
+  left: -9999px;
+  top: 4px;
+  background: var(--light-grey);
+  font-weight: 600;
+}
+#devkit-skip-to-main a:focus,
+#devkit-skip-to-main a:active {
+  position: relative;
+  left: 2px;
+  z-index: 100;
+  height: auto;
+  margin: 0;
+  padding: 6px;
+  text-decoration: none;
+  outline: none;
+}

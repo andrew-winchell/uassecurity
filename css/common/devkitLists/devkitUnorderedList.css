@@ -1,0 +1,9 @@
+.devkit-unordered-list-wrapper {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--slate);
+}
+.devkit-unordered-list-wrapper .devkit-unordered-list-label {
+  font-weight: 600;
+}

@@ -1,0 +1,457 @@
+.devkit-progressbar-wrapper {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.devkit-progressbar-wrapper h3,
+.devkit-progressbar-wrapper .devkit-h3 {
+  margin-top: 0;
+  margin-left: 12px;
+}
+
+.devkit-progressbar-wrapper .devkit-cb-wrapper {
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 24px;
+}
+
+.devkit-progressbar-wrapper .devkit-cb-wrapper .devkit-circle-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-right: 24px;
+  padding-top: 33px;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .fa-check-circle,
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .fa-times-circle {
+  font-size: 2.25rem;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .fa-spinner {
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--slate);
+  font-size: 1.875rem;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .fa-check-circle {
+  color: var(--green);
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .fa-times-circle {
+  color: var(--red);
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-ns-circle {
+  width: 36px;
+  height: 36px;
+  background: var(--background-grey);
+  border-radius: 50%;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-completion-bar,
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-ns-bar,
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-inprogress-bar,
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-error-bar {
+  width: 6px;
+  height: 139px;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-completion-bar {
+  background: var(--green);
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-inprogress-bar {
+  background: var(--yellow);
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-ns-bar {
+  background: var(--light-grey);
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-circle-wrapper
+  .devkit-error-bar {
+  background: var(--red);
+}
+
+.devkit-progressbar-wrapper .devkit-cb-wrapper .devkit-status-wrapper {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-success-status {
+  border: solid 2px var(--green);
+  border-top: 0;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-success-status
+  .devkit-status-header {
+  padding-left: 6px;
+  background: var(--green);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-progress-status {
+  border: solid 2px var(--yellow);
+  border-top: 0;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-progress-status
+  .devkit-status-header {
+  padding-left: 6px;
+  background: var(--yellow);
+  color: var(--slate);
+  font-weight: 600;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-error-status {
+  border: solid 2px var(--red);
+  border-top: 0;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-error-status
+  .devkit-status-header {
+  padding-left: 6px;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-next-status {
+  border: solid 2px var(--darker-grey);
+  border-top: 0;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-next-status
+  .devkit-status-header {
+  padding-left: 6px;
+  background: var(--darker-grey);
+  color: var(--white);
+  font-weight: 600;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-status-text {
+  width: 180px;
+  height: 73px;
+  padding: 6px;
+  background: var(--lighter-grey);
+  color: var(--slate);
+  font-size: 0.875rem;
+  justify-content: center;
+}
+
+.devkit-progressbar-wrapper
+  .devkit-cb-wrapper
+  .devkit-status-wrapper
+  .devkit-hr {
+  width: 2px;
+  height: 60px;
+  background: var(--darker-grey);
+}
+
+.devkit-progressbar-wrapper .devkit-progressbar {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 24px;
+}
+
+.devkit-progressbar-wrapper .devkit-progressbar .devkit-bar,
+.devkit-progressbar-wrapper .devkit-progressbar .devkit-percentage {
+  height: 20px;
+}
+
+.devkit-progressbar-wrapper .devkit-progressbar .devkit-bar {
+  width: 30%;
+  background: var(--dark-blue);
+}
+
+.devkit-progressbar-wrapper .devkit-progressbar .devkit-percentage {
+  width: 70%;
+  background: var(--lighter-grey);
+}
+
+.devkit-progressbar-wrapper .devkit-loading {
+  display: block;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.devkit-progressbar-wrapper .devkit-loading .fa-spinner,
+.devkit-progressbar-wrapper .devkit-loading .devkit-loading-text {
+  display: inline;
+}
+
+.devkit-progressbar-wrapper .devkit-loading .fa-spinner {
+  font-size: 1.5rem;
+}
+
+.devkit-progressbar-wrapper .devkit-loading .devkit-loading-text {
+  margin-left: 12px;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-progressbar-wrapper h3,
+  .devkit-progressbar-wrapper .devkit-h3 {
+    margin-left: 0;
+  }
+
+  .devkit-progressbar-wrapper .devkit-progressbar {
+    width: 400px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-progressbar-wrapper h3:last-of-type,
+  .devkit-progressbar-wrapper .devkit-h3:last-of-type {
+    margin-left: 12px;
+  }
+  .devkit-progressbar-wrapper .devkit-cb-wrapper .devkit-circle-wrapper {
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-progressbar-wrapper {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .devkit-progressbar-wrapper h3:last-of-type,
+  .devkit-progressbar-wrapper .devkit-h3:last-of-type {
+    margin-left: 0;
+  }
+
+  .devkit-progressbar-wrapper .devkit-cb-wrapper {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 36px;
+  }
+
+  .devkit-progressbar-wrapper .devkit-cb-wrapper .devkit-circle-wrapper {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    order: 1;
+    padding-left: 44px;
+    padding-top: 0;
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-ns-circle {
+    min-width: 30px;
+    max-width: 30px;
+    height: 30px;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-completion-bar,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-ns-bar,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-inprogress-bar,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-error-bar {
+    min-width: 99px;
+    max-width: 99px;
+    height: 6px;
+  }
+
+  .devkit-progressbar-wrapper .devkit-cb-wrapper .devkit-status-wrapper {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    order: 2;
+  }
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-success-status
+    .devkit-status-header,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-progress-status
+    .devkit-status-header,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-error-status
+    .devkit-status-header,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-next-status
+    .devkit-status-header {
+    padding-left: 0;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-status-text {
+    min-width: 102px;
+    max-width: 102px;
+    height: 130px;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-hr {
+    min-width: 18px;
+    max-width: 18px;
+    height: 2px;
+  }
+
+  .devkit-progressbar-wrapper .devkit-progressbar {
+    width: 600px;
+    margin-top: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-progressbar-wrapper .devkit-cb-wrapper .devkit-circle-wrapper {
+    padding-left: 70px;
+    padding-top: 0;
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-ns-circle {
+    min-width: 36px;
+    height: 36px;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-completion-bar,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-ns-bar,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-inprogress-bar,
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-circle-wrapper
+    .devkit-error-bar {
+    min-width: 150px;
+    height: 6px;
+  }
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-status-text {
+    min-width: 150px;
+    height: 90px;
+  }
+
+  .devkit-progressbar-wrapper
+    .devkit-cb-wrapper
+    .devkit-status-wrapper
+    .devkit-hr {
+    min-width: 24px;
+    height: 2px;
+  }
+}

@@ -1,0 +1,55 @@
+.devkit-info-message-wrapper {
+  display: flex;
+  width: auto;
+  margin: 0 24px 12px 12px;
+  font-size: 1rem;
+  background: var(--light-cyan);
+  border-left: 11px solid var(--sky-blue);
+}
+
+.devkit-info-message-wrapper .devkit-message-heading-wrapper .fa-info-circle {
+  padding: 24px 3px 3px 20px;
+  font-size: 2.25rem;
+}
+
+.devkit-info-message-wrapper .devkit-message-body-wrapper {
+  width: 100%;
+  font-weight: 400;
+  color: var(--slate);
+  line-height: 1.5rem;
+}
+
+.devkit-info-message-wrapper .devkit-message-body-wrapper .fa-times {
+  float: right;
+  margin-top: 0;
+  padding: 9px 12px 9px 9px;
+  color: var(--slate);
+  font-size: 1rem;
+}
+
+.devkit-info-message-wrapper
+  .devkit-message-body-wrapper
+  .devkit-message-heading {
+  font-size: 1.625rem;
+  font-weight: 600;
+  padding: 24px 24px 0 14px;
+}
+
+.devkit-info-message-wrapper .devkit-message-body-wrapper .devkit-message-body {
+  margin: 12px 0 0 0;
+  font-size: 1rem;
+  padding: 0 24px 24px 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-info-message-wrapper {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-info-message-wrapper {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

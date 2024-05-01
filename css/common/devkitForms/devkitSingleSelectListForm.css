@@ -1,0 +1,69 @@
+.devkit-single-select-list-wrapper {
+  display: flex;
+  color: var(--slate);
+  margin-left: 0;
+  font-size: 1rem;
+}
+
+.devkit-single-select-list-wrapper
+  fieldset.devkit-single-select-fieldset-wrapper {
+  padding: 12px;
+}
+
+.devkit-single-select-list-wrapper fieldset {
+  margin: 12px 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  clear: both;
+}
+
+.devkit-single-select-list-wrapper fieldset .devkit-form-row {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 9px 3px;
+  font-size: 1.125rem;
+}
+
+.devkit-single-select-list-wrapper
+  fieldset
+  .devkit-form-row
+  optgroup.devkit-optgroup {
+  color: var(--slate);
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.devkit-single-select-list-wrapper fieldset .devkit-form-row option {
+  padding: 6px;
+  font-size: 1rem;
+  color: var(--slate);
+}
+
+.devkit-single-select-list-wrapper fieldset .devkit-form-row option:hover {
+  background: var(--hover-blue);
+  color: var(--white);
+  padding: 8px 6px 4px 6px;
+}
+
+.devkit-single-select-list-wrapper fieldset .devkit-form-row select:disabled {
+  background: var(--background-grey);
+}
+
+.devkit-single-select-list-wrapper .devkit-required {
+  font-size: 1.625rem;
+  color: var(--red);
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-single-select-list-wrapper fieldset.devkit-select-fieldset-wrapper {
+    padding: 24px;
+    font-size: 1rem;
+  }
+  .devkit-single-select-list-wrapper fieldset .devkit-form-row select {
+    width: 350px;
+  }
+}

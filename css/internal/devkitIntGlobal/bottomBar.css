@@ -1,0 +1,45 @@
+.devkit-bottom-bar-wrapper {
+  height: 72px;
+  padding: 4px 0;
+  margin: 24px 12px 12px 12px;
+  background: linear-gradient(
+    var(--bottom-bar-dark-blue),
+    var(--bottom-bar-darker-blue)
+  );
+  border-radius: 10px;
+}
+
+.devkit-bottom-bar-wrapper .devkit-logo-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  margin-top: 6px;
+}
+
+.devkit-bottom-bar-wrapper .devkit-logo-wrapper img {
+  width: 60px;
+  height: 60px;
+}
+
+.devkit-bottom-bar-wrapper .devkit-logo-wrapper .devkit-logo-title {
+  color: var(--white);
+  width: 200px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-bottom-bar-wrapper {
+    height: 90px;
+    padding: 4px 0;
+    margin: 48px 24px 24px 24px;
+  }
+  .devkit-bottom-bar-wrapper .devkit-logo-wrapper img {
+    width: 72px;
+    height: 72px;
+  }
+  .devkit-bottom-bar-wrapper .devkit-logo-wrapper .devkit-logo-title {
+    font-size: 1.5rem;
+  }
+}

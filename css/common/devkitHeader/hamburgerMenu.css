@@ -1,0 +1,181 @@
+.devkit-mobile-menu {
+  width: 44px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+}
+.devkit-mobile-menu .devkit-icon-wrapper {
+  display: block;
+  cursor: pointer;
+}
+.devkit-mobile-menu .devkit-icon-wrapper .fa-bars {
+  display: block;
+  width: 36px;
+  padding-left: 13px;
+  padding-top: 6px;
+  font-size: 1.5rem;
+}
+.devkit-mobile-menu .devkit-icon-wrapper .devkit-menu-text {
+  display: block;
+  padding: 4px 4px 12px 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.devkit-menu-overlay {
+  display: none;
+}
+.devkit-mobile-menu-items {
+  display: none;
+}
+.devkit-menu-overlay.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--white);
+  color: var(--slate);
+  overflow: auto;
+  z-index: 30;
+}
+.devkit-menu-overlay.active .devkit-greeting-wrapper {
+  display: block;
+  width: 260px;
+  word-wrap: break-word;
+}
+.devkit-menu-overlay.active .devkit-greeting-wrapper p {
+  padding-left: 6px;
+}
+.devkit-menu-overlay.active .devkit-close-menu {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 1.5rem;
+  color: var(--charcoal);
+  cursor: pointer;
+}
+.devkit-menu-overlay.active .devkit-mobile-menu-items.active {
+  display: block;
+  overflow: hidden;
+}
+.devkit-menu-overlay.active .devkit-mobile-menu-items.active li.devkit-nav-link,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  li.devkit-inner-nav-link {
+  list-style-type: none;
+}
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links {
+  position: relative;
+  display: block;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link-nosub {
+  display: block;
+  line-height: 2.25rem;
+  border-bottom: solid 1px var(--lighter-grey);
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link
+  a:link,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link
+  a:visited,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link
+  a:hover,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link-nosub
+  a:link,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link-nosub
+  a:visited,
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link-nosub
+  a:hover {
+  color: var(--charcoal);
+  text-decoration: none;
+}
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  ul.devkit-nav-links
+  li.devkit-nav-link
+  .devkit-main-menu-link:after {
+  content: "\25bc";
+  color: var(--dark-blue);
+  padding-left: 2px;
+  font-size: 1rem;
+}
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  li.devkit-nav-link
+  ul.submenu-nav {
+  display: none;
+}
+.devkit-menu-overlay.active
+  .devkit-mobile-menu-items.active
+  li.devkit-inner-nav-link {
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .devkit-menu-overlay.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--white);
+    overflow: hidden;
+  }
+
+  .devkit-menu-overlay.active .devkit-greeting-wrapper {
+    display: block;
+    width: 600px;
+  }
+  .devkit-menu-overlay.active .devkit-greeting-wrapper p {
+    padding-left: 18px;
+  }
+
+  .devkit-menu-overlay.active .devkit-close-menu {
+    top: 12px;
+    right: 22px;
+    font-size: 1.5rem;
+    color: var(--charcoal);
+  }
+  .devkit-menu-overlay.active
+    .devkit-mobile-menu-items.active
+    ul.devkit-nav-links {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .devkit-mobile-menu {
+    display: none;
+  }
+}

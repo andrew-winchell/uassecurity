@@ -1,0 +1,200 @@
+:root {
+  margin: 0 auto;
+}
+
+/* This is needed to remove grey border on top of
+external main content area in desktop mode, mobile and tablet modes.*/
+
+.devkit-left-nav-main-wrapper.devkit-no-border {
+  border-top: 0;
+}
+
+.devkit-left-nav-main-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr repeat(3, 16px 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 12px auto;
+  border-top: solid 2px var(--lighter-grey);
+}
+
+.devkit-left-nav-main-wrapper .devkit-main-head {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-left: 12px;
+}
+
+.devkit-left-nav-main-wrapper .devkit-content-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-left: 12px;
+}
+
+.devkit-left-nav-main-wrapper .devkit-content-wrapper p {
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+.devkit-left-nav-main-wrapper .devkit-left-nav-link-wrapper {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-left-nav-main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-main-head {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 14;
+    grid-column: 9 / span 14;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-top: 18px;
+    margin-right: 0;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1 / span 7;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-content-wrapper {
+    -ms-grid-column: 9;
+    -ms-grid-column-span: 14;
+    grid-column: 9 / span 14;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-left-nav-main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    margin: 24px 0 0 0;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-main-head {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 15;
+    grid-column: 7 / span 15;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 18px 0 0 0;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
+    grid-column: 1 / span 5;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-content-wrapper {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 15;
+    grid-column: 7 / span 15;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-right: 12px;
+    line-height: 1.875rem;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-content-wrapper p:first-of-type {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-left-nav-main-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    margin-top: 9px;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-main-head {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 17;
+    grid-column: 5 / span 17;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin: 24px 0 0 0;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1 / span 4;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-top: 24px;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-content-wrapper {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 17;
+    grid-column: 5 / span 17;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin: 24px 0 0 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-left-nav-main-wrapper .devkit-main-head {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 18;
+    grid-column: 5 / span 18;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-left-nav-link-wrapper {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1 / span 3;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+
+  .devkit-left-nav-main-wrapper .devkit-content-wrapper {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 18;
+    grid-column: 5 / span 18;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}

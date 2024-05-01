@@ -1,0 +1,43 @@
+.devkit-ext-flinks-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.devkit-ext-flinks-wrapper .devkit-flinks-col:not(:last-child) {
+  padding-right: 16px;
+}
+
+.devkit-ext-flinks-wrapper .devkit-flinks-col h2,
+.devkit-ext-flinks-wrapper .devkit-flinks-col .devkit-h2 {
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+}
+
+.devkit-ext-flinks-wrapper .devkit-flinks-col ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.devkit-ext-flinks-wrapper .devkit-flinks-col ul li {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.9375rem;
+}
+
+.devkit-ext-flinks-wrapper .devkit-flinks-col ul li a:link,
+.devkit-ext-flinks-wrapper .devkit-flinks-col ul li a:hover,
+.devkit-ext-flinks-wrapper .devkit-flinks-col ul li a:visited {
+  color: var(--white);
+}
+
+.devkit-ext-flinks-wrapper .devkit-flinks-col ul li a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-ext-flinks-wrapper {
+    flex-wrap: nowrap;
+  }
+}

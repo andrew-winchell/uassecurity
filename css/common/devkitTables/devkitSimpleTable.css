@@ -1,0 +1,106 @@
+.devkit-simple-table-wrapper {
+  margin-bottom: 24px;
+}
+
+.devkit-simple-table-wrapper .devkit-table {
+  width: 98%;
+  border: solid 1px var(--light-grey);
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  color: var(--slate);
+}
+
+.devkit-simple-table-wrapper .devkit-table .devkit-table-title {
+  padding: 8px 9px 6px 16px;
+  background: var(--light-blue);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.devkit-simple-table-wrapper .devkit-table thead th {
+  padding: 10px;
+  text-align: left;
+  border: solid 1px var(--light-grey);
+  border-left: none;
+  border-right: none;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.devkit-simple-table-wrapper .devkit-table tbody {
+  font-size: 0.875rem;
+}
+
+.devkit-simple-table-wrapper .devkit-table tbody td {
+  border: solid 1px var(--light-grey);
+  padding: 10px;
+  border-left: none;
+  border-right: none;
+}
+
+.devkit-simple-table-wrapper .devkit-table tr .fa {
+  padding-right: 9px;
+  cursor: pointer;
+}
+
+.devkit-simple-table-wrapper .devkit-table tr:hover {
+  font-weight: 600;
+}
+
+.devkit-simple-table-wrapper .devkit-table tr.devkit-table-row:nth-child(even) {
+  background: var(--table-grey);
+}
+
+.devkit-simple-table-wrapper .devkit-table tr.devkit-table-row:nth-child(odd) {
+  background: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+  .devkit-simple-table-wrapper .devkit-table {
+    border: 1px solid var(--light-grey);
+    border-bottom: 0;
+  }
+
+  .devkit-simple-table-wrapper .devkit-table .devkit-table-title {
+    padding: 8px 9px 6px 16px;
+    background: var(--light-blue);
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  .devkit-simple-table-wrapper .devkit-table thead {
+    display: none;
+  }
+
+  .devkit-simple-table-wrapper .devkit-table tr {
+    border-bottom: 1px solid var(--light-grey);
+    display: block;
+    margin-bottom: 0;
+  }
+  .devkit-simple-table-wrapper .devkit-table tbody td {
+    display: block;
+    border: 0;
+    font-size: 0.875rem;
+    text-align: right;
+  }
+
+  .devkit-simple-table-wrapper .devkit-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: 600;
+    color: var(--dark-blue);
+  }
+
+  .devkit-simple-table-wrapper .devkit-table td:last-child {
+    border-bottom: none;
+  }
+}

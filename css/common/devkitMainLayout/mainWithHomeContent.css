@@ -1,0 +1,143 @@
+:root {
+  margin: 0 auto;
+}
+
+.devkit-home-content-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
+  grid-template-columns: 1fr repeat(3, 16px 1fr);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  width: 100%;
+  margin: 12px auto;
+  border-top: solid 2px var(--lighter-grey);
+}
+
+.devkit-home-content-wrapper .devkit-main-head {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 2;
+  grid-column: 6 / span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-right: 12px;
+}
+
+.devkit-home-content-wrapper .devkit-home-content,
+.devkit-home-content-wrapper .devkit-changelog-content {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1 / span 7;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-home-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .devkit-home-content-wrapper .devkit-main-head {
+    -ms-grid-column: 19;
+    -ms-grid-column-span: 5;
+    grid-column: 19 / span 5;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-right: 0;
+  }
+
+  .devkit-home-content-wrapper .devkit-home-content,
+  .devkit-home-content-wrapper .devkit-changelog-content {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 20;
+    grid-column: 3 / span 20;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-home-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .devkit-home-content-wrapper .devkit-main-head {
+    -ms-grid-column: 20;
+    -ms-grid-column-span: 5;
+    grid-column: 20 / span 5;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    margin-left: 0;
+  }
+
+  .devkit-home-content-wrapper .devkit-home-content,
+  .devkit-home-content-wrapper .devkit-changelog-content {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 20;
+    grid-column: 3 / span 20;
+    -ms-grid-row: 2;
+    grid-row: 2;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-home-content-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr
+      24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 1fr repeat(11, 24px 1fr);
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .devkit-home-content-wrapper .devkit-main-head {
+    -ms-grid-column: 21;
+    -ms-grid-column-span: 3;
+    grid-column: 21 / span 3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-home-content-wrapper .devkit-home-content,
+  .devkit-home-content-wrapper .devkit-changelog-content {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 20;
+    grid-column: 3 / span 20;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-home-content-wrapper .devkit-main-head {
+    -ms-grid-column: 21;
+    -ms-grid-column-span: 3;
+    grid-column: 21 / span 3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+
+  .devkit-home-content-wrapper .devkit-home-content,
+  .devkit-home-content-wrapper .devkit-changelog-content {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 20;
+    grid-column: 3 / span 20;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+}

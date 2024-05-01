@@ -1,0 +1,200 @@
+/* This file has styles for horizontal navigation bar.
+For vertical navigation styles, please refer to sideNav.css */
+
+.devkit-ext-fw-nav-wrapper {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-ext-fw-nav-wrapper {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-ext-fw-nav-wrapper {
+    display: block;
+    background: var(--light-blue);
+    height: 42px;
+    margin: 0 auto 12px auto;
+    border-bottom: 1px solid var(--external-dark-blue);
+  }
+
+  .devkit-ext-fw-nav-wrapper ul.devkit-nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 960px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link {
+    padding: 11px 0 12px 0;
+  }
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link a.devkit-main-menu-link,
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link span.devkit-main-menu-link {
+    padding: 16px 7px 12px 7px;
+  }
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link span.devkit-main-menu-link {
+    color: var(--white);
+  }
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link div.devkit-nav-dropdown {
+    display: none;
+    min-width: 200px;
+    position: absolute;
+    background: var(--white);
+    margin: 9px 0 6px 0;
+    z-index: 30;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav {
+    display: block;
+    padding: 10px 18px;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    li.devkit-inner-nav-link {
+    border-bottom: solid 1px var(--lighter-grey);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    li.devkit-inner-nav-link
+    a.devkit-submenu-link:link,
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    li.devkit-inner-nav-link
+    a.devkit-submenu-link:visited {
+    color: var(--slate);
+    padding: 10px 9px;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    li.devkit-inner-nav-link
+    a.devkit-submenu-link:hover {
+    background: var(--external-dark-blue);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 12px 9px 13px 9px;
+    text-decoration: none;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    li.devkit-inner-nav-link,
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    span.devkit-submenu-heading {
+    display: block;
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav
+    li.devkit-inner-nav-link:last-of-type {
+    border-bottom: 0;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav.left,
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav.right {
+    display: inline-block;
+  }
+
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav.left
+    span.devkit-submenu-heading,
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    div.devkit-nav-dropdown
+    ul.submenu-nav.right
+    span.devkit-submenu-heading {
+    margin-left: 8px;
+    padding: 0;
+  }
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link
+    span.devkit-main-menu-link:after {
+    content: "\25bc";
+    color: var(--white);
+    padding-left: 2px;
+    font-size: 1rem;
+  }
+
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link,
+  .devkit-ext-fw-nav-wrapper li.devkit-inner-nav-link {
+    list-style: none;
+  }
+
+  .devkit-ext-fw-nav-wrapper a {
+    text-decoration: none;
+  }
+
+  .devkit-ext-fw-nav-wrapper a:link,
+  .devkit-ext-fw-nav-wrapper a:visited {
+    color: var(--white);
+  }
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link:last-of-type
+    div.devkit-nav-dropdown {
+    right: 200;
+  }
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link:hover div.devkit-nav-dropdown {
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0 0 4px 2px rgba(51, 51, 51, 0.1);
+  }
+
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link:hover a.devkit-main-menu-link,
+  .devkit-ext-fw-nav-wrapper
+    li.devkit-nav-link:hover
+    span.devkit-main-menu-link {
+    background: var(--ext-microhead-background);
+  }
+
+  .devkit-ext-fw-nav-wrapper li.devkit-nav-link.active {
+    background: var(--white);
+    color: var(--slate);
+    outline: none;
+    border-bottom: 5px solid var(--external-dark-blue);
+    border-right: 1px solid var(--external-dark-blue);
+    border-left: 1px solid var(--external-dark-blue);
+    border-radius: 6px 6px 0 0;
+  }
+}

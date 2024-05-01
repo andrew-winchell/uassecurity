@@ -1,0 +1,489 @@
+.devkit-toolbar-wrapper,
+.devkit-ext-toolbar-wrapper {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 8;
+  cursor: pointer;
+}
+
+.devkit-toolbar-wrapper .devkit-tool-bar-text,
+.devkit-ext-toolbar-wrapper .devkit-tool-bar-text {
+  display: none;
+}
+
+.devkit-toolbar-wrapper .devkit-toolbar-icon,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon {
+  display: flex;
+  align-items: center;
+}
+
+.devkit-toolbar-wrapper .devkit-toolbar-icon .devkit-tool-bar-text,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .devkit-tool-bar-text {
+  padding-left: 4px;
+}
+
+.devkit-toolbar-wrapper .devkit-toolbar-icon a:link,
+.devkit-toolbar-wrapper .devkit-toolbar-icon a:visited,
+.devkit-toolbar-wrapper .devkit-toolbar-icon a:hover,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:link,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:visited,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:hover {
+  text-decoration: none;
+}
+
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .devkit-search-text,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .devkit-search-text {
+  display: none;
+}
+
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-user,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-user-alt,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-question-circle,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-user,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-user-alt,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-question-circle {
+  font-size: 1.25rem;
+}
+
+.devkit-toolbar-wrapper #devkit-help-icon-wrapper,
+.devkit-ext-toolbar-wrapper #devkit-help-icon-wrapper {
+  position: relative;
+}
+
+.devkit-toolbar-wrapper #devkit-help-icon-wrapper .devkit-help-content-wrapper,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper {
+  font-family: "Helvetica Neue", Helvetica, sans-serif, Arial;
+  display: none;
+  position: absolute;
+  top: 60px;
+  z-index: 51;
+  width: 320px;
+  height: auto;
+  padding: 0 24px 24px 24px;
+  background-color: var(--table-grey);
+  border: 1px solid var(--darker-grey);
+  border-radius: 6px;
+  box-shadow: 0 0 10px var(--darker-grey);
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper {
+  display: block;
+  padding-bottom: 18px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title {
+  font-weight: 600;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content {
+  font-weight: 400;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-title,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper
+  .item-content {
+  display: inline;
+  font-size: 1rem;
+  color: var(--slate);
+  padding: 6px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper:first-of-type,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper:first-of-type,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper:first-of-type,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper:first-of-type {
+  margin-top: 18px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper:last-of-type,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper:last-of-type,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper
+  .devkit-help-item-wrapper:last-of-type,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper
+  .devkit-help-item-wrapper:last-of-type {
+  padding-bottom: 12px;
+}
+
+.devkit-toolbar-wrapper #devkit-help-icon-wrapper .devkit-help-content-wrapper,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper {
+  right: -9px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper {
+  right: -16px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:before,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:before,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:before,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-bottom: 32px solid rgba(125, 125, 127, 0.5);
+  z-index: 2;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:after,
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:after,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:after,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:after {
+  content: "";
+  position: absolute;
+  top: -32px;
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-bottom: 25px solid var(--table-grey);
+  z-index: 3;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:before,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:before {
+  right: 10px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:before,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:before {
+  right: 20px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:after,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-help-content-wrapper:after {
+  right: 12px;
+}
+
+.devkit-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:after,
+.devkit-ext-toolbar-wrapper
+  #devkit-help-icon-wrapper
+  .devkit-ext-help-content-wrapper:after {
+  right: 22px;
+}
+
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-user,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-user-alt,
+.devkit-toolbar-wrapper .devkit-toolbar-icon .fa-question-circle {
+  color: var(--dark-blue);
+}
+
+.devkit-toolbar-wrapper .devkit-tool-bar-text {
+  color: var(--dark-blue);
+}
+
+.devkit-toolbar-wrapper .devkit-tool-bar-text.active {
+  color: var(--dark-blue);
+}
+
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-user,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-user-alt,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-question-circle {
+  color: var(--white);
+}
+
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:active .fa-user,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:active .fa-user-alt,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:hover .fa-user,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:hover .fa-user-alt,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:visited .fa-user,
+.devkit-ext-toolbar-wrapper .devkit-toolbar-icon a:visited .fa-user-alt {
+  color: var(--white);
+}
+
+.devkit-ext-toolbar-wrapper .devkit-tool-bar-text.active {
+  color: var(--white);
+}
+
+.devkit-ext-toolbar-wrapper a:link .devkit-tool-bar-text,
+.devkit-ext-toolbar-wrapper a:hover .devkit-tool-bar-text,
+.devkit-ext-toolbar-wrapper a:visited .devkit-tool-bar-text {
+  color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+  .devkit-toolbar-wrapper .devkit-toolbar-icon .fa-user,
+  .devkit-toolbar-wrapper .devkit-toolbar-icon .fa-user-alt,
+  .devkit-toolbar-wrapper .devkit-toolbar-icon .fa-question-circle,
+  .devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+  .devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-user,
+  .devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-user-alt,
+  .devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-question-circle {
+    font-size: 1.5rem;
+  }
+
+  .devkit-toolbar-wrapper .devkit-tool-bar-text,
+  .devkit-ext-toolbar-wrapper .devkit-tool-bar-text {
+    display: inline;
+    padding-right: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+  .devkit-toolbar-wrapper .devkit-toolbar-icon .devkit-search-text,
+  .devkit-ext-toolbar-wrapper .devkit-toolbar-icon .fa-search,
+  .devkit-ext-toolbar-wrapper .devkit-toolbar-icon .devkit-search-text {
+    display: inline;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper {
+    right: 20px;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper {
+    right: 2px;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:before,
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:before,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:before,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:before {
+    content: "";
+    position: absolute;
+    top: -42px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom: 32px solid rgba(125, 125, 127, 0.5);
+    z-index: 2;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:after,
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:after,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:after,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:after {
+    content: "";
+    position: absolute;
+    top: -32px;
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom: 25px solid var(--table-grey);
+    z-index: 3;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:before,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:before {
+    right: 51px;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:before,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:before {
+    right: 20px;
+  }
+
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:after,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-help-content-wrapper:after {
+    right: 53px;
+  }
+  .devkit-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:after,
+  .devkit-ext-toolbar-wrapper
+    #devkit-help-icon-wrapper
+    .devkit-ext-help-content-wrapper:after {
+    right: 22px;
+  }
+}

@@ -1,0 +1,57 @@
+.devkit-textarea-input-form-wrapper {
+  display: flex;
+  margin-left: 0;
+  color: var(--slate);
+}
+
+.devkit-textarea-input-form-wrapper
+  fieldset.devkit-textarea-input-fieldset-wrapper {
+  min-width: 300px;
+  padding: 6px;
+  font-size: 1rem;
+}
+
+.devkit-textarea-input-form-wrapper fieldset {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  clear: both;
+  margin: 12px 0;
+  padding: 0;
+}
+
+.devkit-textarea-input-form-wrapper fieldset textarea {
+  padding-left: 6px;
+}
+
+.devkit-textarea-input-form-wrapper fieldset .devkit-form-row {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 30px;
+}
+
+.devkit-textarea-input-form-wrapper fieldset .devkit-form-row label {
+  font-size: 1.125rem;
+}
+
+.devkit-textarea-input-form-wrapper fieldset .devkit-form-row textarea {
+  width: 300px;
+  border: solid 1px var(--darker-grey);
+}
+
+.devkit-textarea-input-form-wrapper
+  fieldset
+  .devkit-form-row
+  .devkit-character-count {
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-textarea-input-form-wrapper
+    fieldset.devkit-textarea-input-fieldset-wrapper {
+    padding: 24px;
+    font-size: 1rem;
+  }
+  .devkit-textarea-input-form-wrapper fieldset .devkit-form-row textarea {
+    width: 420px;
+  }
+}

@@ -1,0 +1,127 @@
+.devkit-left-nav-link-wrapper {
+  width: 200px;
+  margin: 12px 0 12px 12px;
+}
+
+.devkit-left-nav-link-wrapper .devkit-nav-heading {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background: transparent;
+}
+
+.devkit-left-nav-link-wrapper .devkit-nav-heading a:link,
+.devkit-left-nav-link-wrapper .devkit-nav-heading a:hover,
+.devkit-left-nav-link-wrapper .devkit-nav-heading a:visited {
+  color: var(--link-active);
+}
+
+.devkit-left-nav-link-wrapper .devkit-nav-heading a:hover {
+  text-decoration: underline;
+}
+
+.devkit-left-nav-link-wrapper .devkit-nav-heading.active a {
+  font-weight: 600;
+  color: var(--slate);
+}
+
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links {
+  padding-left: 0;
+  padding-right: 18px;
+  font-size: 1rem;
+}
+
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links li {
+  list-style-type: none;
+  padding: 10px 6px;
+  font-size: 1rem;
+  border-top: 1px solid var(--light-grey);
+  line-height: 1.5rem;
+}
+
+.devkit-left-nav-link-wrapper
+  ul.devkit-left-nav-links
+  li
+  .devkit-v-inner-nav-head {
+  cursor: pointer;
+}
+
+.devkit-left-nav-link-wrapper
+  ul.devkit-left-nav-links
+  li
+  .devkit-v-inner-nav-head:after {
+  content: "\25bc";
+  color: var(--dark-blue);
+  padding-left: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.devkit-left-nav-link-wrapper
+  ul.devkit-left-nav-links
+  li
+  ul.devkit-v-inner-nav {
+  display: none;
+  font-weight: 500;
+}
+
+.devkit-left-nav-link-wrapper
+  ul.devkit-left-nav-links
+  li
+  ul.devkit-v-inner-nav
+  li {
+  border: none;
+}
+
+.devkit-left-nav-link-wrapper
+  ul.devkit-left-nav-links
+  li
+  ul.devkit-v-inner-nav
+  li:last-of-type {
+  border: none;
+}
+
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links li a:link,
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links li a:visited {
+  color: var(--link-active);
+  text-decoration: none;
+}
+
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links li:last-of-type {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.devkit-left-nav-link-wrapper ul.devkit-left-nav-links li.active a {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--slate);
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-left-nav-link-wrapper {
+    width: 160px;
+    margin: 6px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-left-nav-link-wrapper {
+    width: 200px;
+    margin: 0 0 0 24px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-left-nav-link-wrapper {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-left-nav-link-wrapper {
+    width: 240px;
+  }
+}

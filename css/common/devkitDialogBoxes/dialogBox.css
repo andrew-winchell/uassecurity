@@ -1,0 +1,50 @@
+.devkit-dialog-wrapper {
+  font-size: 1rem;
+  margin: 0 24px 12px 12px;
+}
+
+.devkit-dialog-wrapper button {
+  border: 0;
+  box-shadow: 0;
+}
+
+.devkit-dialog-wrapper .devkit-dialog-heading-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background: var(--dialog-background);
+  color: var(--white);
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+.devkit-dialog-wrapper .devkit-dialog-body {
+  border: solid 1px var(--light-grey);
+  border-top: none;
+  padding: 15px;
+  color: var(--slate);
+  line-height: 1.5rem;
+}
+
+.devkit-dialog-wrapper .devkit-dialog-body p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-dialog-wrapper {
+    width: 400px;
+    margin-right: 0;
+  }
+  .devkit-dialog-wrapper .devkit-dialog-body {
+    height: 400px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-dialog-wrapper {
+    width: 500px;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,26 @@
+.devkit-tabs-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 960px) {
+  .devkit-tabs-wrapper {
+    justify-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-tabs-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .devkit-tabs-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

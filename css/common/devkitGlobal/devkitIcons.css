@@ -1,0 +1,70 @@
+.devkit-icons-table-wrapper {
+  margin-bottom: 24px;
+}
+
+.devkit-icons-table-wrapper h3,
+.devkit-icons-table-wrapper .devkit-h3 {
+  margin-bottom: 12px;
+}
+
+.devkit-icons-table-wrapper p {
+  margin: 0;
+  line-height: 1.875rem;
+}
+
+.devkit-icons-table-wrapper .devkit-table {
+  width: 70%;
+  border: solid 1px var(--light-grey);
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 24px 0 0 0;
+  padding: 0;
+  table-layout: fixed;
+  color: var(--slate);
+}
+
+.devkit-icons-table-wrapper .devkit-table .devkit-table-title {
+  padding: 10px 9px 8px 18px;
+  background: var(--light-blue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.devkit-icons-table-wrapper .devkit-table thead th {
+  padding: 10px 10px 10px 18px;
+  text-align: left;
+  border: solid 1px var(--light-grey);
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.devkit-icons-table-wrapper .devkit-table tbody td {
+  border: solid 1px var(--light-grey);
+  padding: 10px 10px 10px 18px;
+}
+
+.devkit-icons-table-wrapper .devkit-table tr:hover {
+  font-weight: 600;
+}
+
+.devkit-icons-table-wrapper .devkit-table tr.devkit-table-row:nth-child(even) {
+  background: var(--table-grey);
+}
+
+.devkit-icons-table-wrapper .devkit-table tr.devkit-table-row:nth-child(odd) {
+  background: var(--white);
+}
+
+.devkit-icons-table-wrapper .devkit-table .fa {
+  font-size: 1.5rem;
+  /* padding-left: 18px; */
+}
+
+@media screen and (max-width: 600px) {
+  .devkit-icons-table-wrapper .devkit-table {
+    width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+.devkit-tab-wrapper {
+  width: 330px;
+  z-index: 20;
+  margin-bottom: 24px;
+}
+
+.devkit-tab-wrapper h3,
+.devkit-tab-wrapper .devkit-h3 {
+  margin-top: 0;
+  margin-left: 6px;
+}
+
+.devkit-tab-wrapper ul.devkit-tabs {
+  margin: 0;
+  padding-left: 0;
+}
+
+.devkit-tab-wrapper ul.devkit-tabs li {
+  display: inline;
+  border-bottom-width: 0;
+  margin: 0 1px 0 0;
+  padding: 11px 14px 11px 14px;
+  list-style: none;
+  background: var(--tab-background);
+  text-decoration: none;
+  color: var(--link-active);
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.devkit-tab-wrapper ul.devkit-tabs li.active {
+  background: var(--white);
+  color: var(--slate);
+  font-weight: 700;
+  position: relative;
+  top: 1px;
+  border: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--white);
+  outline: none;
+}
+
+.devkit-tab-wrapper ul.devkit-tabs li:hover {
+  text-decoration: underline;
+}
+
+.devkit-tab-wrapper .devkit-tab-content {
+  display: none;
+  margin-top: 6px;
+  padding: 15px;
+  font-size: 1rem;
+  color: var(--slate);
+  line-height: 1.5rem;
+  border: 1px solid var(--light-grey);
+}
+
+.devkit-tab-wrapper .devkit-tab-content.active {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .devkit-tab-wrapper {
+    width: 550px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-tab-wrapper {
+    margin-right: 24px;
+  }
+}

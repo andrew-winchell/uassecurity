@@ -1,0 +1,32 @@
+.devkit-ordered-list-wrapper {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--slate);
+}
+
+.devkit-ordered-list-wrapper .mobile-head {
+  display: block;
+}
+
+.devkit-ordered-list-wrapper .devkit-ordered-list-label {
+  font-weight: 600;
+}
+
+.devkit-ordered-list-wrapper ol.devkit-outer {
+  list-style-type: decimal;
+}
+
+.devkit-ordered-list-wrapper ol.devkit-mid {
+  list-style-type: lower-alpha;
+}
+
+.devkit-ordered-list-wrapper ol.devkit-inner {
+  list-style-type: lower-roman;
+}
+
+@media screen and (min-width: 1280px) {
+  .devkit-ordered-list-wrapper .mobile-head {
+    display: none;
+  }
+}
