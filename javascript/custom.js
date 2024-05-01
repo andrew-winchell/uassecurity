@@ -61,11 +61,12 @@ require([
                     })
                     .then(() => {
                         checkSignIn();
+                        LoadSurvey123()
                     });
             });
     }
 
-    function LoadSurvey123(token) {
+    function LoadSurvey123() {
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
@@ -73,7 +74,7 @@ require([
             itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
             portalUrl: 'https://faasysops.maps.arcgis.com',
             width: '1200',
-            token: token,
+            // token: token,
             globalId: url.searchParams.get("globalid"),
             mode: url.searchParams.get("globalid")==null?'':'edit',
             onFormSubmitted: (data) => {window.parent.scrollTo(0,0)}
