@@ -67,6 +67,7 @@ require([
     }
 
     function LoadSurvey123() {
+        console.log("load survey");
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
