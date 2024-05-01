@@ -4,10 +4,10 @@ require([
 ], function (OAuthInfo, esriId) {
 
     const info = new OAuthInfo({
-        appId: "U8amYNIuc1osljKk",
-        portalUrl: "https://cobecconsulting.maps.arcgis.com",
-        // appId: "0iQHRlu9bRvesIIV", 
-        // portalUrl: "https://faasysops.maps.arcgis.com",
+        // appId: "U8amYNIuc1osljKk",
+        // portalUrl: "https://cobecconsulting.maps.arcgis.com",
+        appId: "0iQHRlu9bRvesIIV", 
+        portalUrl: "https://faasysops.maps.arcgis.com",
         authNamespace: "portal_oauth_inline",
         flowtype: "auto",
         popup: false
