@@ -50,9 +50,7 @@ require([
         esriId
             .checkSignInStatus(info.portalUrl + "/sharing")
             .then(() => {
-                esriId.destroyCredentials();
-                window.location.reload();
-                console.log("destroy")
+                LoadSurvey123();
             })
             .catch(() => {
                 esriId
@@ -61,7 +59,6 @@ require([
                     })
                     .then(() => {
                         checkSignIn();
-                        LoadSurvey123()
                     });
             });
     }
