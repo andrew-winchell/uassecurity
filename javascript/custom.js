@@ -26,7 +26,7 @@ require([
             .then((credentials) => {
                 let token = credentials.token;
                 console.log(token);
-                LoadSurvey123(token);
+                LoadSurvey123Secure(token);
             });
 
         // esriId.checkSignInStatus(info.portalUrl + "/sharing")
@@ -39,6 +39,20 @@ require([
     }
 
     function LoadSurvey123() {
+        let url_string = window.location.href;
+        let url = new URL(url_string);
+        let webform = new Survey123WebForm({
+            container: 'mywebform',
+            itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
+            portalUrl: 'https://faasysops.maps.arcgis.com',
+            width: '1200',
+            globalId: url.searchParams.get("globalid"),
+            mode: url.searchParams.get("globalid")==null?'':'edit',
+            onFormSubmitted: (data) => {window.parent.scrollTo(0,0)}
+        });
+    }
+
+    function LoadSurvey123Secure(token) {
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
