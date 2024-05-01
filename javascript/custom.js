@@ -4,6 +4,18 @@ require([
 ], function (OAuthInfo, esriId) {
 
     let token = null;
+    
+    const info = new OAuthInfo({
+        // appId: "U8amYNIuc1osljKk",
+        // portalUrl: "https://cobecconsulting.maps.arcgis.com",
+        appId: "0iQHRlu9bRvesIIV", 
+        portalUrl: "https://faasysops.maps.arcgis.com",
+        authNamespace: "portal_oauth_inline",
+        flowtype: "auto",
+        popup: false
+    });
+
+    esriId.registerOAuthInfos([info]);
 
     window.onload = () => {
         esriId.checkSignInStatus(info.portalUrl + "/sharing")
@@ -24,18 +36,6 @@ require([
     document.getElementById("sign-in").addEventListener('click', userAuth);
 
     function userAuth() {
-        const info = new OAuthInfo({
-            // appId: "U8amYNIuc1osljKk",
-            // portalUrl: "https://cobecconsulting.maps.arcgis.com",
-            appId: "0iQHRlu9bRvesIIV", 
-            portalUrl: "https://faasysops.maps.arcgis.com",
-            authNamespace: "portal_oauth_inline",
-            flowtype: "auto",
-            popup: false
-        });
-
-        esriId.registerOAuthInfos([info]);
-
         esriId.getCredential(info.portalUrl + "/sharing")
             .then((credentials) => {
                 token = credentials.token;
