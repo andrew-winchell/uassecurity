@@ -3,9 +3,22 @@ require([
     "esri/identity/IdentityManager"
 ], function (OAuthInfo, esriId) {
 
+    let token = null;
+
     window.onload = () => {
-        console.log("window onload");
-        LoadSurvey123();
+        esriId.checkSignInStatus(info.portalUrl + "/sharing")
+            .then(() => {
+                console.log("Sign in Successfull.");
+            
+                console.log("window onload secure");
+                LoadSurvey123Secure(token);
+            })
+            .catch(() => {
+                console.log("Public User");
+            
+                console.log("window onload public");
+                LoadSurvey123();
+            });
     }
     
     document.getElementById("sign-in").addEventListener('click', userAuth);
@@ -25,18 +38,9 @@ require([
 
         esriId.getCredential(info.portalUrl + "/sharing")
             .then((credentials) => {
-                let token = credentials.token;
+                token = credentials.token;
                 console.log(token);
-                LoadSurvey123Secure(token);
             });
-
-        // esriId.checkSignInStatus(info.portalUrl + "/sharing")
-        //     .then(() => {
-        //         console.log("Sign in Successfull.");
-        //     })
-        //     .catch(() => {
-        //         console.log("Public User");
-        //     });
     }
 
     function LoadSurvey123() {
