@@ -26,8 +26,7 @@ require([
             .checkSignInStatus(info.portalUrl + "/sharing")
             .then(() => {
                 // If signed in, show the username in the UI
-                navigationUser.hiden = false;
-                signInButton.hidden = true;
+                console.log("signed in")
                 const portal = new Portal({
                     authMode: "immediate"
                 });
@@ -37,13 +36,32 @@ require([
                 }
 
                 portal.load().then(() => {
-                    navigationUser.fullName = portal.user.fullName;
-                    navigatorUser.username = portal.user.username;
-                })
+                    console.log(portal.user.fullName);
+                    console.log(portal.user.username);
+                });
             })
             .catch(() => {
                 console.log("not signed in");
+                signIn();
             })
+    }
+
+    function signIn() {
+        esriId
+            .checkSignInStatus(info.portalUrl + "/sharing")
+            .then(() => {
+                esriId.destroyCredentials();
+                window.location.reload();
+            })
+            .catch(() => {
+                esriId
+                    .getCredential(info.portalUrl + "/sharing", {
+                        oAuthPopupConfirmation: true
+                    })
+                    .then(() => {
+                        checkSignIn();
+                    });
+            });
     }
 
     function LoadSurvey123(token) {
