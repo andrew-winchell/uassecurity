@@ -12,10 +12,10 @@ require([
 
     function userAuth() {
         const info = new OAuthInfo({
-            appId: "U8amYNIuc1osljKk",
-            portalUrl: "https://cobecconsulting.maps.arcgis.com",
-            // appId: "0iQHRlu9bRvesIIV", 
-            // portalUrl: "https://www.arcgis.com",
+            // appId: "U8amYNIuc1osljKk",
+            // portalUrl: "https://cobecconsulting.maps.arcgis.com",
+            appId: "0iQHRlu9bRvesIIV", 
+            portalUrl: "https://faasysops.maps.arcgis.com",
             authNamespace: "portal_oauth_inline",
             flowtype: "auto",
             popup: false
@@ -44,12 +44,13 @@ require([
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
+            clientId: "0iQHRlu9bRvesIIV",
             container: 'mywebform',
             itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
-            portalUrl: 'https://www.arcgis.com',
+            portalUrl: 'https://faasysops.maps.arcgis.com',
             width: '1200',
             globalId: url.searchParams.get("globalid"),
-            mode: url.searchParams.get("globalid")==null?'':'edit',
+            mode: url.searchParams.get("globalid") == null ? '' : 'edit',
             onFormSubmitted: (data) => {window.parent.scrollTo(0,0)}
         });
     }
@@ -61,13 +62,14 @@ require([
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
+            clientId: "0iQHRlu9bRvesIIV",
             container: 'mywebform',
             itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
-            portalUrl: 'https://www.arcgis.com',
+            portalUrl: 'https://faasysops.maps.arcgis.com',
             width: '1200',
             token: token,
             globalId: url.searchParams.get("globalid"),
-            mode: url.searchParams.get("globalid")==null?'':'edit',
+            mode: url.searchParams.get("globalid") == null ? '' : 'edit',
             onFormSubmitted: (data) => {window.parent.scrollTo(0,0)}
         });
     }
