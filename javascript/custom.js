@@ -52,6 +52,7 @@ require([
             .then(() => {
                 esriId.destroyCredentials();
                 window.location.reload();
+                console.log("destroy")
             })
             .catch(() => {
                 esriId
