@@ -23,6 +23,7 @@ require([
         esriId.getCredential(info.portalUrl + "/sharing")
             .then((credentials) => {
                 let token = credentials.token;
+                console.log(token)
                 LoadSurvey123(token);
             });
 
