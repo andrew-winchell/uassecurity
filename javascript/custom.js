@@ -9,37 +9,17 @@ require([
     //     LoadSurvey123();
     // }
     
-    document.getElementById("sign-in").addEventListener('click', userAuth);
-    
-    function userAuth() {
+    document.getElementById("sign-in").addEventListener('click', checkSignIn);
 
-        const info = new OAuthInfo({
-            appId: "0iQHRlu9bRvesIIV",
-            portalUrl: "https://faasysops.maps.arcgis.com",
-            authNamespace: "portal_oauth_inline",
-            flowtype: "auto",
-            popup: false
-        });
-    
-        esriId.registerOAuthInfos([info]);
-    
-        checkSignIn();
+    const info = new OAuthInfo({
+        appId: "0iQHRlu9bRvesIIV",
+        portalUrl: "https://faasysops.maps.arcgis.com",
+        authNamespace: "portal_oauth_inline",
+        flowtype: "auto",
+        popup: false
+    });
 
-        // esriId.getCredential(info.portalUrl + "/sharing")
-        //     .then((credentials) => {
-        //         let token = credentials.token;
-        //         console.log(token)
-        //         LoadSurvey123(token);
-        //     });
-
-        // esriId.checkSignInStatus(info.portalUrl + "/sharing")
-        //     .then(() => {
-        //         console.log("Sign in Successfull.");
-        //     })
-        //     .catch(() => {
-        //         console.log("Public User");
-        //     });
-    }
+    esriId.registerOAuthInfos([info]);
 
     function checkSignIn() {
         esriId
