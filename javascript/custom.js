@@ -4,6 +4,7 @@ require([
 ], function (OAuthInfo, esriId) {
 
     window.onload = () => {
+        console.log("window onload");
         LoadSurvey123();
     }
     
@@ -39,6 +40,7 @@ require([
     }
 
     function LoadSurvey123() {
+        console.log("LoadSurvey123");
         let url_string = window.location.href;
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
@@ -53,6 +55,7 @@ require([
     }
 
     function LoadSurvey123Secure(token) {
+        console.log("LoadSurvey123Secure");
         document.getElementById('mywebform').innerHTML = '';
 
         let url_string = window.location.href;
