@@ -4,10 +4,10 @@ require([
 ], function (OAuthInfo, esriId) {
 
     const info = new OAuthInfo({
-        appId: "U8amYNIuc1osljKk",
-        portalUrl: "https://cobecconsulting.maps.arcgis.com",
-        // appId: "0iQHRlu9bRvesIIV", 
-        // portalUrl: "https://faasysops.maps.arcgis.com",
+        // appId: "U8amYNIuc1osljKk",
+        // portalUrl: "https://cobecconsulting.maps.arcgis.com",
+        appId: "0iQHRlu9bRvesIIV", 
+        portalUrl: "https://faasysops.maps.arcgis.com",
         authNamespace: "portal_oauth_inline",
         flowtype: "auto",
         popup: false
@@ -51,10 +51,10 @@ require([
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
             container: 'mywebform',
-            // itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
-            // portalUrl: 'https://faasysops.maps.arcgis.com',
-            itemId: '4e43a9579f584a8ea1faf424d2e445f2',
-            portalUrl: 'https://cobecconsulting.maps.arcgis.com',
+            itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
+            portalUrl: 'https://faasysops.maps.arcgis.com',
+            // itemId: '4e43a9579f584a8ea1faf424d2e445f2',
+            // portalUrl: 'https://cobecconsulting.maps.arcgis.com',
             width: '1200',
             globalId: url.searchParams.get("globalid"),
             mode: url.searchParams.get("globalid") == null ? '' : 'edit',
@@ -70,10 +70,10 @@ require([
         let url = new URL(url_string);
         let webform = new Survey123WebForm({
             container: 'mywebform',
-            // itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
-            // portalUrl: 'https://faasysops.maps.arcgis.com',
-            itemId: '4e43a9579f584a8ea1faf424d2e445f2',
-            portalUrl: 'https://cobecconsulting.maps.arcgis.com',
+            itemId: '7b4bd8a23e784a068b6c05626c36dd6d',
+            portalUrl: 'https://faasysops.maps.arcgis.com',
+            // itemId: '4e43a9579f584a8ea1faf424d2e445f2',
+            // portalUrl: 'https://cobecconsulting.maps.arcgis.com',
             width: '1200',
             token: token,
             globalId: url.searchParams.get("globalid"),
