@@ -472,3 +472,13 @@ body .devkit-notes-wrapper {
   box-shadow: 0 0 0 1px var(--asbestos);
   cursor: not-allowed;
 }
+#sign-in {
+  background-color: #0076c0;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+#sign-in:hover {
+  background-color: white;
+  color: black;
+}
